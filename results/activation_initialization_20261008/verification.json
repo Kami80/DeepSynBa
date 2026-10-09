@@ -1,0 +1,107 @@
+{
+  "run_audits": [
+    {
+      "condition": "softplus_near_one",
+      "seed": 42,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "softplus_near_one",
+      "seed": 43,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "softplus_near_one",
+      "seed": 44,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_original",
+      "seed": 42,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_original",
+      "seed": 43,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_original",
+      "seed": 44,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "softplus_original",
+      "seed": 42,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "softplus_original",
+      "seed": 43,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "softplus_original",
+      "seed": 44,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_near_one",
+      "seed": 42,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_near_one",
+      "seed": 43,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    },
+    {
+      "condition": "relu_near_one",
+      "seed": 44,
+      "prediction_metrics_verified": true,
+      "history_verified": true,
+      "head_diagnostics_verified": true,
+      "initial_and_best_cuda_reload_exact": true
+    }
+  ],
+  "exact_reproducibility_controls": 3,
+  "independent_metrics": true,
+  "independent_contrast_matrix_check": true,
+  "analysis_source_sha256": "20a1263a8a7b30dc16803baa18018519a9143e0684bd12fe954a384b45007d55",
+  "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+  "data_contain_test_rows": false,
+  "actual_total_updates": 21984
+}

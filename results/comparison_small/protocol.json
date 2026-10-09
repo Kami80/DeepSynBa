@@ -1,0 +1,154 @@
+{
+  "started_utc": "2026-09-30T06:25:51.046703+00:00",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "variants": [
+    {
+      "id": "reference",
+      "label": "Reference",
+      "positive": false,
+      "small": false,
+      "swap": false,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "positive",
+      "label": "Positive outputs",
+      "positive": true,
+      "small": false,
+      "swap": false,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "small",
+      "label": "Smaller model",
+      "positive": false,
+      "small": true,
+      "swap": false,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "swap",
+      "label": "Drug-order augmentation",
+      "positive": false,
+      "small": false,
+      "swap": true,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "positive_small",
+      "label": "Positive + smaller",
+      "positive": true,
+      "small": true,
+      "swap": false,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "positive_swap",
+      "label": "Positive + augmentation",
+      "positive": true,
+      "small": false,
+      "swap": true,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "small_swap",
+      "label": "Smaller + augmentation",
+      "positive": false,
+      "small": true,
+      "swap": true,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "positive_small_swap",
+      "label": "All three",
+      "positive": true,
+      "small": true,
+      "swap": true,
+      "bias": true,
+      "bias_l2": 0.0
+    },
+    {
+      "id": "positive_small_swap_bias_l2",
+      "label": "All three + bias penalty",
+      "positive": true,
+      "small": true,
+      "swap": true,
+      "bias": true,
+      "bias_l2": 0.1
+    },
+    {
+      "id": "positive_small_swap_no_bias",
+      "label": "All three, no bias",
+      "positive": true,
+      "small": true,
+      "swap": true,
+      "bias": false,
+      "bias_l2": 0.0
+    }
+  ],
+  "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+  "max_epochs": 100,
+  "patience": 8,
+  "batch_size": 128,
+  "gradient_clip": 5.0,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 1e-05
+  },
+  "scheduler": {
+    "name": "LinearLR",
+    "start_factor": 1.0,
+    "end_factor": 0.5,
+    "total_iters": 30
+  },
+  "counts": {
+    "train": 3000,
+    "val": 1000,
+    "test": 1000
+  },
+  "positive_package": {
+    "keys": [
+      "h1_mean",
+      "h2_mean",
+      "alpha_mean"
+    ],
+    "activation": "Softplus + epsilon",
+    "epsilon": 0.0001,
+    "final_weight_multiplier": 0.01,
+    "initial_output_target": 1.0
+  },
+  "small_dimensions": {
+    "gene_channel": 128,
+    "emb_size": 512
+  },
+  "augmentation": "Independent Bernoulli(0.5) per training example; swap drugs/doses and transpose targets. No inference averaging.",
+  "bias_penalty": "MSE(response, target) + 0.1 * mean(bias**2), only in the bias_l2 variant",
+  "selection": "Minimum mean validation RMSE across three seeds; tie breaks: SD, parameter count, ID. Minimum validation MSE checkpoint per seed.",
+  "diagnostic_example_selection": "Reference seed-44 validation matrix RMSE ranks at 10th, 50th, 90th, 99th percentiles; same examples in every comparison.",
+  "uncertainty": "Mean +/- sample SD across three seeds on ONE fixed split, not confidence intervals",
+  "test_policy": "Freeze variant ranking and all checkpoint hashes before any test evaluation in this suite. Prior reference test results are already known: exploratory reused test set, not a fresh benchmark.",
+  "comparison": "Full 2x2x2 factorial for positive package/size/swap; two conditional bias ablations on the all-three configuration. Not a complete bias factorial.",
+  "source_sha256": {
+    "ablation_model.py": "bfc1b73ca3f8b4f612b4e02926654b77c1cfbe5f47b7b5082d531d8595e9f58b",
+    "compare_variants.py": "eb9a1bfd96c272efe7d576cb71a9a7db0eca8aad7eb2b7f639b61cd65e7d49ff",
+    "train_small.py": "350eeaab21d0aafaa4a06964ff32b1a8beac16db436b959c3a92cecdfdca31fd",
+    "config.yaml": "14b2b10267b34cf488a0fc6732d1492d3ae0af32f3a8cf88fe7a1633bd61777f",
+    "config.small.yaml": "ad2fd21fa35a387809b3dc64bb0509f924ec9ab135f5bfc3d642e30d3ec243cf",
+    "deepsynba.py": "12f0089aaa962a54749910d4f885508f6f5e6e32d9e92acb804f3017fece11a0",
+    "blocks/predictor.py": "d3008aafc5ed36471704f372f42ad8a4005f6bef1306019c745e16873142a470",
+    "blocks/drug_encoder.py": "be9f408c394132d399cf4c8db6faa3efd4fdd982f93e18719185c7d6d9ef68fc"
+  },
+  "original_reference": "E:\\PROJECTS\\UNI\\DeepSynBa\\runs\\extended_100"
+}

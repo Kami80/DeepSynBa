@@ -1,0 +1,372 @@
+{
+  "confirmation": [
+    {
+      "variant": "positive_swap",
+      "label": "Positive + augmentation",
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "rmse_mean": 14.44343731170626,
+      "rmse_sd": 0.36713477145749784,
+      "pearson_mean": 0.8397801010942745,
+      "pearson_sd": 0.00930874057799842,
+      "spearman_mean": 0.6787975099809724,
+      "spearman_sd": 0.011001708392038262,
+      "combination_rmse_mean": 17.17139678081969,
+      "combination_rmse_sd": 0.39629665912009165
+    },
+    {
+      "variant": "reference",
+      "label": "Reference",
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "rmse_mean": 21.357344778917085,
+      "rmse_sd": 2.2469446838050633,
+      "pearson_mean": 0.5775188424840152,
+      "pearson_sd": 0.13348851635082593,
+      "spearman_mean": 0.47345461731715033,
+      "spearman_sd": 0.07827958169973288,
+      "combination_rmse_mean": 23.746165513123884,
+      "combination_rmse_sd": 2.0858476402975157
+    },
+    {
+      "variant": "small_swap",
+      "label": "Compact + augmentation",
+      "training_matrices": 3000,
+      "parameters": 3499409,
+      "rmse_mean": 15.019266361670873,
+      "rmse_sd": 0.010902565951962468,
+      "pearson_mean": 0.8240968583433249,
+      "pearson_sd": 0.0001186711619269022,
+      "spearman_mean": 0.667537779528068,
+      "spearman_sd": 0.003425869199917579,
+      "combination_rmse_mean": 17.8130940838266,
+      "combination_rmse_sd": 0.018612744038462026
+    }
+  ],
+  "paired_bootstrap": {
+    "all_16": {
+      "clusters": 323,
+      "matrices": 1000,
+      "replicates": 5000,
+      "seed": 20261003,
+      "comparisons": [
+        {
+          "model": "positive_swap",
+          "baseline": "reference",
+          "mean_seed_rmse_difference": -6.913907467210819,
+          "percentile_95_ci": [
+            -7.786810641681256,
+            -6.08483850821524
+          ],
+          "relative_reduction_percent": 32.372504816403435,
+          "relative_reduction_percentile_95_ci": [
+            29.02803255751005,
+            35.76812824800224
+          ]
+        },
+        {
+          "model": "small_swap",
+          "baseline": "reference",
+          "mean_seed_rmse_difference": -6.338078417246207,
+          "percentile_95_ci": [
+            -7.161447714105283,
+            -5.538076510755937
+          ],
+          "relative_reduction_percent": 29.676340775763688,
+          "relative_reduction_percentile_95_ci": [
+            26.42618989369149,
+            32.953818086236495
+          ]
+        },
+        {
+          "model": "small_swap",
+          "baseline": "positive_swap",
+          "mean_seed_rmse_difference": 0.5758290499646126,
+          "percentile_95_ci": [
+            0.3340503739077377,
+            0.8187161337848695
+          ],
+          "relative_reduction_percent": -3.9867867844582072,
+          "relative_reduction_percentile_95_ci": [
+            -5.780302377952041,
+            -2.31621586630187
+          ]
+        }
+      ]
+    },
+    "combination_9": {
+      "clusters": 323,
+      "matrices": 1000,
+      "replicates": 5000,
+      "seed": 20261003,
+      "comparisons": [
+        {
+          "model": "positive_swap",
+          "baseline": "reference",
+          "mean_seed_rmse_difference": -6.5747687323042,
+          "percentile_95_ci": [
+            -7.532977182143661,
+            -5.634625993027303
+          ],
+          "relative_reduction_percent": 27.68770700545524,
+          "relative_reduction_percentile_95_ci": [
+            24.171834780184632,
+            31.22427161961609
+          ]
+        },
+        {
+          "model": "small_swap",
+          "baseline": "reference",
+          "mean_seed_rmse_difference": -5.933071429297289,
+          "percentile_95_ci": [
+            -6.847401180635522,
+            -5.038581495212003
+          ],
+          "relative_reduction_percent": 24.98538732924368,
+          "relative_reduction_percentile_95_ci": [
+            21.55074867678267,
+            28.40153765253235
+          ]
+        },
+        {
+          "model": "small_swap",
+          "baseline": "positive_swap",
+          "mean_seed_rmse_difference": 0.6416973030069109,
+          "percentile_95_ci": [
+            0.34845289906647625,
+            0.9356540859565763
+          ],
+          "relative_reduction_percent": -3.737012842913745,
+          "relative_reduction_percentile_95_ci": [
+            -5.544529725292425,
+            -2.041432463537811
+          ]
+        }
+      ]
+    }
+  },
+  "learning_complete": true,
+  "learning": [
+    {
+      "variant": "positive_swap",
+      "label": "Positive + augmentation",
+      "training_matrices": 500,
+      "parameters": 40944401,
+      "rmse_mean": 23.872027193042424,
+      "rmse_sd": 0.1188324859863279,
+      "pearson_mean": 0.4714235636661319,
+      "pearson_sd": 0.006975091875962163,
+      "spearman_mean": 0.4242650665933132,
+      "spearman_sd": 0.012449476145702064,
+      "combination_rmse_mean": 27.262194323578584,
+      "combination_rmse_sd": 0.15403158472215173,
+      "validation_rmse_mean": 22.967255079160342,
+      "validation_rmse_sd": 0.2806706006648231,
+      "training_seconds_mean": 19.872270500000013,
+      "training_seconds_sd": 2.679134265953244
+    },
+    {
+      "variant": "reference",
+      "label": "Reference",
+      "training_matrices": 500,
+      "parameters": 40944401,
+      "rmse_mean": 25.002504779863983,
+      "rmse_sd": 0.1330848383574912,
+      "pearson_mean": 0.3775383931828739,
+      "pearson_sd": 0.0264228504769655,
+      "spearman_mean": 0.3044834627240977,
+      "spearman_sd": 0.03651021534266337,
+      "combination_rmse_mean": 28.156545917286905,
+      "combination_rmse_sd": 0.19259622993158132,
+      "validation_rmse_mean": 24.359362058677718,
+      "validation_rmse_sd": 0.2064399941038945,
+      "training_seconds_mean": 15.117877166666554,
+      "training_seconds_sd": 4.493312870049189
+    },
+    {
+      "variant": "small_swap",
+      "label": "Compact + augmentation",
+      "training_matrices": 500,
+      "parameters": 3499409,
+      "rmse_mean": 25.40077383769729,
+      "rmse_sd": 0.4710261032822158,
+      "pearson_mean": 0.30582522012730284,
+      "pearson_sd": 0.051742663874822105,
+      "spearman_mean": 0.23195768598925334,
+      "spearman_sd": 0.06942844029977907,
+      "combination_rmse_mean": 28.766102863509932,
+      "combination_rmse_sd": 0.5958813802370578,
+      "validation_rmse_mean": 24.40717387439057,
+      "validation_rmse_sd": 0.35421225209569623,
+      "training_seconds_mean": 17.837140266666665,
+      "training_seconds_sd": 12.100489270590854
+    },
+    {
+      "variant": "positive_swap",
+      "label": "Positive + augmentation",
+      "training_matrices": 1000,
+      "parameters": 40944401,
+      "rmse_mean": 18.253238920963437,
+      "rmse_sd": 0.21934805635327576,
+      "pearson_mean": 0.7374940681709851,
+      "pearson_sd": 0.005330287171021761,
+      "spearman_mean": 0.5939331221372197,
+      "spearman_sd": 0.005495972718631971,
+      "combination_rmse_mean": 21.271915694215572,
+      "combination_rmse_sd": 0.19678001471999942,
+      "validation_rmse_mean": 17.831082330372485,
+      "validation_rmse_sd": 0.24122013264707617,
+      "training_seconds_mean": 78.02154443333318,
+      "training_seconds_sd": 1.7228311603725373
+    },
+    {
+      "variant": "reference",
+      "label": "Reference",
+      "training_matrices": 1000,
+      "parameters": 40944401,
+      "rmse_mean": 24.529077342786405,
+      "rmse_sd": 0.7547631836537699,
+      "pearson_mean": 0.39595306432591193,
+      "pearson_sd": 0.07830550872343674,
+      "spearman_mean": 0.3378067538074146,
+      "spearman_sd": 0.05312218722238332,
+      "combination_rmse_mean": 27.592746555436232,
+      "combination_rmse_sd": 0.7147862186575845,
+      "validation_rmse_mean": 23.578501397003908,
+      "validation_rmse_sd": 0.5386636927563512,
+      "training_seconds_mean": 22.99714173333329,
+      "training_seconds_sd": 10.444287820844204
+    },
+    {
+      "variant": "small_swap",
+      "label": "Compact + augmentation",
+      "training_matrices": 1000,
+      "parameters": 3499409,
+      "rmse_mean": 21.816206779227258,
+      "rmse_sd": 0.3414232566763629,
+      "pearson_mean": 0.5924695364673546,
+      "pearson_sd": 0.020578668434682056,
+      "spearman_mean": 0.5197134076705764,
+      "spearman_sd": 0.012213916077885544,
+      "combination_rmse_mean": 25.163458236210328,
+      "combination_rmse_sd": 0.27944549745101666,
+      "validation_rmse_mean": 21.152171544321593,
+      "validation_rmse_sd": 0.366391006668857,
+      "training_seconds_mean": 69.87351780000002,
+      "training_seconds_sd": 4.598865138860455
+    },
+    {
+      "variant": "positive_swap",
+      "label": "Positive + augmentation",
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "rmse_mean": 16.100480620148584,
+      "rmse_sd": 0.7939931092347395,
+      "pearson_mean": 0.797452866495922,
+      "pearson_sd": 0.023265632223963367,
+      "spearman_mean": 0.6387290014554506,
+      "spearman_sd": 0.021206540374804624,
+      "combination_rmse_mean": 18.883378571699918,
+      "combination_rmse_sd": 0.8210098925710072,
+      "validation_rmse_mean": 15.40156808876238,
+      "validation_rmse_sd": 0.6599374613770898,
+      "training_seconds_mean": 63.92858930000011,
+      "training_seconds_sd": 19.4717119689601
+    },
+    {
+      "variant": "reference",
+      "label": "Reference",
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "rmse_mean": 20.374376640118907,
+      "rmse_sd": 4.165641514917181,
+      "pearson_mean": 0.6087641972480908,
+      "pearson_sd": 0.1930992162539353,
+      "spearman_mean": 0.5002849270746901,
+      "spearman_sd": 0.13970850608858632,
+      "combination_rmse_mean": 23.055296368033606,
+      "combination_rmse_sd": 4.049075765663104,
+      "validation_rmse_mean": 19.854887816546185,
+      "validation_rmse_sd": 3.6837991900865923,
+      "training_seconds_mean": 90.84444880000001,
+      "training_seconds_sd": 25.981945635360546
+    },
+    {
+      "variant": "small_swap",
+      "label": "Compact + augmentation",
+      "training_matrices": 2000,
+      "parameters": 3499409,
+      "rmse_mean": 16.83135086525751,
+      "rmse_sd": 0.3878953862348814,
+      "pearson_mean": 0.7754581645987919,
+      "pearson_sd": 0.011577664748207806,
+      "spearman_mean": 0.636816538570148,
+      "spearman_sd": 0.007875261107111313,
+      "combination_rmse_mean": 19.714014859783713,
+      "combination_rmse_sd": 0.3935401358951902,
+      "validation_rmse_mean": 16.252263729071753,
+      "validation_rmse_sd": 0.3115297918466525,
+      "training_seconds_mean": 52.282015066666645,
+      "training_seconds_sd": 5.327656376790177
+    },
+    {
+      "variant": "positive_swap",
+      "label": "Positive + augmentation",
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "rmse_mean": 14.44343731170626,
+      "rmse_sd": 0.36713477145749784,
+      "pearson_mean": 0.8397801010942745,
+      "pearson_sd": 0.00930874057799842,
+      "spearman_mean": 0.6787975099809724,
+      "spearman_sd": 0.011001708392038262,
+      "combination_rmse_mean": 17.17139678081969,
+      "combination_rmse_sd": 0.39629665912009165,
+      "validation_rmse_mean": 14.048358285728211,
+      "validation_rmse_sd": 0.32920278079683946,
+      "training_seconds_mean": 87.48659406666411,
+      "training_seconds_sd": 21.88143745036394
+    },
+    {
+      "variant": "reference",
+      "label": "Reference",
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "rmse_mean": 21.357344778917085,
+      "rmse_sd": 2.2469446838050633,
+      "pearson_mean": 0.5775188424840152,
+      "pearson_sd": 0.13348851635082593,
+      "spearman_mean": 0.47345461731715033,
+      "spearman_sd": 0.07827958169973288,
+      "combination_rmse_mean": 23.746165513123884,
+      "combination_rmse_sd": 2.0858476402975157,
+      "validation_rmse_mean": 20.910284597544045,
+      "validation_rmse_sd": 1.7839508211908903,
+      "training_seconds_mean": 97.48101686666875,
+      "training_seconds_sd": 10.639259781262785
+    },
+    {
+      "variant": "small_swap",
+      "label": "Compact + augmentation",
+      "training_matrices": 3000,
+      "parameters": 3499409,
+      "rmse_mean": 15.019266361670873,
+      "rmse_sd": 0.010902565951962468,
+      "pearson_mean": 0.8240968583433249,
+      "pearson_sd": 0.0001186711619269022,
+      "spearman_mean": 0.667537779528068,
+      "spearman_sd": 0.003425869199917579,
+      "combination_rmse_mean": 17.8130940838266,
+      "combination_rmse_sd": 0.018612744038462026,
+      "validation_rmse_mean": 14.454349898303457,
+      "validation_rmse_sd": 0.06361085265967222,
+      "training_seconds_mean": 165.29106676666802,
+      "training_seconds_sd": 33.7489668520567
+    }
+  ],
+  "protocol_sha256": "3d31f7a3b2d188b71ce34825b092d2021b483c30b46c5f067ee159f17c957210",
+  "analysis_source_sha256": {
+    "analyze_next_steps.py": "17701e53b6cbb45902b3c9e3826c8c319834934e6bd5d01f5a772caec01d0dc6",
+    "next_steps_statistics.py": "8c6f9be1b834a9a15181549422cd051b3f643d8d2ffe04a97110085768180d09"
+  }
+}

@@ -109,8 +109,9 @@ class DeepSynBa(nn.Module):
         drug1_features = torch.permute(drug1_features, (0, 2, 1))
         drug2_features = torch.permute(drug2_features, (0, 2, 1))
 
-        in1 = torch.cat((gene_expr, drug1_features), dim=1).squeeze()
-        in2 = torch.cat((gene_expr, drug2_features), dim=1).squeeze()
+        # Keep the batch dimension when evaluating a single example.
+        in1 = torch.cat((gene_expr, drug1_features), dim=1).squeeze(-1)
+        in2 = torch.cat((gene_expr, drug2_features), dim=1).squeeze(-1)
 
         conditional_cell_line1 = self.drug_cell_agg(in1)
         conditional_cell_line2 = self.drug_cell_agg(in2)

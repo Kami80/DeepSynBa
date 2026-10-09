@@ -1,0 +1,606 @@
+{
+  "frozen_utc": "2026-10-08T13:54:37.180292+00:00",
+  "ranking": [
+    {
+      "id": "softplus_near_one",
+      "activation": "softplus",
+      "initialization": "near_one",
+      "validation_rmse_mean": 14.342615008374308,
+      "validation_rmse_sd": 0.17827173551298608
+    },
+    {
+      "id": "relu_near_one",
+      "activation": "relu",
+      "initialization": "near_one",
+      "validation_rmse_mean": 14.407758886518645,
+      "validation_rmse_sd": 0.09099198457051733
+    },
+    {
+      "id": "softplus_original",
+      "activation": "softplus",
+      "initialization": "original",
+      "validation_rmse_mean": 14.479955191381293,
+      "validation_rmse_sd": 0.20035810984011557
+    },
+    {
+      "id": "relu_original",
+      "activation": "relu",
+      "initialization": "original",
+      "validation_rmse_mean": 20.37814386558148,
+      "validation_rmse_sd": 2.1315338998925797
+    }
+  ],
+  "selected_condition": {
+    "id": "softplus_near_one",
+    "activation": "softplus",
+    "initialization": "near_one",
+    "validation_rmse_mean": 14.342615008374308,
+    "validation_rmse_sd": 0.17827173551298608
+  },
+  "runs": [
+    {
+      "updates_completed": 2208,
+      "best_update": 2016,
+      "examples_seen": 276000,
+      "best_examples_seen": 252000,
+      "epochs_started": 138,
+      "epoch_equivalent": 138.0,
+      "best_validation_mse": 202.36902939465767,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_near_one",
+        "activation": "softplus",
+        "initialization": "near_one"
+      },
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.225646888442636,
+          "pearson": 0.8311930080337718,
+          "spearman": 0.6456989497667901,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.007166059542065,
+          "pearson": 0.8044588577481268,
+          "spearman": 0.6676733757143113,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 169.62115930009168,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": true,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_near_one\\seed_42",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "90c9f8e8e43d195522f78053071beb2965a0160f03d381ac4d32efa62b034a0e",
+        "history.csv": "db5d41bdb8eaf17de329dd1cce5d0238ef13ce12f0f3de541e7a5caff9f1f045",
+        "val_predictions.npz": "f737833dedc1cfe7b45e9a9a880ac0e612a1bb392053d756f166475c8a8e48e0",
+        "initial_outputs.npz": "1572ba0e1d170995f8397aa835a13bb909bdbc1956609e90a626258b14bf6ed6",
+        "val_outputs.npz": "8bfd07320d850889513af1fafbdd1ba8caeefd0bc2e1232403d515212bc26564",
+        "diagnostics.json": "3a8d041c885f3f7f743ad0d0eed281c1cbe275bc982928e76045b5c64ec17827"
+      }
+    },
+    {
+      "updates_completed": 2160,
+      "best_update": 1968,
+      "examples_seen": 270000,
+      "best_examples_seen": 246000,
+      "epochs_started": 135,
+      "epoch_equivalent": 135.0,
+      "best_validation_mse": 203.18801271769667,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_near_one",
+        "activation": "softplus",
+        "initialization": "near_one"
+      },
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.254403274697145,
+          "pearson": 0.829832253296483,
+          "spearman": 0.6412526693650733,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.032412939927557,
+          "pearson": 0.8038062736728023,
+          "spearman": 0.6654704670564984,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 162.51420890004374,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": true,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_near_one\\seed_43",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "4ea78c9cf8aaab5332bd7d93e6743a266c1235ef5a26f9ebdcb33359d30c6d2a",
+        "history.csv": "9570fad167bd3be670c0f32f428e4bed8f1b64f0cbe9a76668f633ce84e659d3",
+        "val_predictions.npz": "34bd00d192406a23eca7b8ab82bc460dd205920c79ea7fe47a14185b6a3cc204",
+        "initial_outputs.npz": "35de3ec9eac7e03507146adbd226da7734ee9e2815597a1ac3302f6268e6d612",
+        "val_outputs.npz": "9428b741266faa6ec676dff218cea2b8448fe0e21abde9d16de7e378b34064a3",
+        "diagnostics.json": "774b6b16c07a4366bd009e4ab823bdc146e2a1f277d3ea9c854d6bf6299741de"
+      }
+    },
+    {
+      "updates_completed": 1632,
+      "best_update": 1440,
+      "examples_seen": 204000,
+      "best_examples_seen": 180000,
+      "epochs_started": 102,
+      "epoch_equivalent": 102.0,
+      "best_validation_mse": 211.63833534634315,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_near_one",
+        "activation": "softplus",
+        "initialization": "near_one"
+      },
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.547794861983144,
+          "pearson": 0.8245165271846036,
+          "spearman": 0.6356540433987301,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.33909065638157,
+          "pearson": 0.7986712808304658,
+          "spearman": 0.6598163461195843,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 122.60523240000475,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": true,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_near_one\\seed_44",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "6c92476f94308ff1bf198abd3ca36b97c93bc4baa2f7ee04c91a745ab4c98b5f",
+        "history.csv": "689262c6e848744cc6555e2ea3316af99be1c376a89332a1a3bda0eded2fc9e3",
+        "val_predictions.npz": "c8149dfc12c924789c71409dd3c67f6fab26b3c1019696ae47321af0523c8570",
+        "initial_outputs.npz": "dbcb91eb16b40e48ea3eacff86c38c2cfe94b6a956a09bbf0db96fe485838901",
+        "val_outputs.npz": "96e86fe9240dce54ba4c8fb20457ebe551cd621743c58a5b0338774515c30e43",
+        "diagnostics.json": "0366865e00c7fd93009079bb38f075c5b9e3d6fe1e6de1a6554841cf5d962482"
+      }
+    },
+    {
+      "updates_completed": 1920,
+      "best_update": 1728,
+      "examples_seen": 240000,
+      "best_examples_seen": 216000,
+      "epochs_started": 120,
+      "epoch_equivalent": 120.0,
+      "best_validation_mse": 358.0481240044906,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_original",
+        "activation": "relu",
+        "initialization": "original"
+      },
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 18.922159602024568,
+          "pearson": 0.6654873823527319,
+          "spearman": 0.5062863203664688,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 21.191960241138357,
+          "pearson": 0.6696734874158541,
+          "spearman": 0.559961248884043,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 148.7412103000097,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_original\\seed_42",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "db615301a66eaad2e0a6a1bfac8e826725520296d774c81184c36806682042a9",
+        "history.csv": "cc6237d0534b06949850442d8c1031a1e78361a5911e6948be4e9b0a0fb6238c",
+        "val_predictions.npz": "17719ddef77ea29283f3f5e18b6c2a23b0c201db7bfafe47d37b2fd1771668cd",
+        "initial_outputs.npz": "82cea9d5de8cc511b58dcde769dd69f75efcc4d67a08ac88e527a4949f06414c",
+        "val_outputs.npz": "caefe9de1df38e7e03aa75c46ca0e70a152b1a70976fc82bd86d25e0bbdaa12f",
+        "diagnostics.json": "79a0bf6a74c97c84e2c1554761650a52199a5c40ca38a1b6f99f2ac1cb8239e2"
+      }
+    },
+    {
+      "updates_completed": 1800,
+      "best_update": 1608,
+      "examples_seen": 225024,
+      "best_examples_seen": 201024,
+      "epochs_started": 113,
+      "epoch_equivalent": 112.5,
+      "best_validation_mse": 375.87730591130327,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_original",
+        "activation": "relu",
+        "initialization": "original"
+      },
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 19.387555439283812,
+          "pearson": 0.6451168537373975,
+          "spearman": 0.49976753406993746,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 21.426586068411403,
+          "pearson": 0.6572757048018132,
+          "spearman": 0.560721813515946,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 149.11381070001516,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_original\\seed_43",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "2842b294bd44e1a2044b45e5c631fa8106882bf73eba298654bf23c859abfde8",
+        "history.csv": "5e41dc2db04e3d4f5aa130a9c2e71030f9824187793d73624891cfe8a8c58a8d",
+        "val_predictions.npz": "4b37b48b44edd63c9fbccb100d2960991e11e7b0499b7f565c0cb1d8650f3cc6",
+        "initial_outputs.npz": "0620b42961fc863bce17eecb7dda6f83db5fe409d245266bc42f47dadfe1fc24",
+        "val_outputs.npz": "8b5818f6da46f5c24b90914eefd9d0836666c904410f52872f72f21e50e44992",
+        "diagnostics.json": "29851182c51d1e531fe67dbc2d6af8b33dafef303f5615e57bdeb7936328d545"
+      }
+    },
+    {
+      "updates_completed": 1560,
+      "best_update": 1368,
+      "examples_seen": 195024,
+      "best_examples_seen": 171024,
+      "epochs_started": 98,
+      "epoch_equivalent": 97.5,
+      "best_validation_mse": 520.967685835997,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_original",
+        "activation": "relu",
+        "initialization": "original"
+      },
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 22.824716555436062,
+          "pearson": 0.43405500841188355,
+          "spearman": 0.3659513779212621,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 24.877649472672882,
+          "pearson": 0.5054552340045605,
+          "spearman": 0.44555966289005455,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 123.50214260001667,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_original\\seed_44",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "e0d2c3080d96fb90b18d8eb2fc36bb85e773805e30808f0d6d676bb3a1cc1ec3",
+        "history.csv": "129c26d22cafd7fc8038d7d65c47e76739b96835bb95800bdc763089077d482c",
+        "val_predictions.npz": "e879a9ba5c5d6a13d3e1a70b5d882e5d3fd04d2ccab683110ccdb2b63f43043c",
+        "initial_outputs.npz": "d324b6aa4bd66481fec5638cc0b5a270b010aaf794116625f4669607456c4fe0",
+        "val_outputs.npz": "26bc65b34429e32684420a070a4c0cf936b1695a1fee992d497abed4c7dcedf9",
+        "diagnostics.json": "4e33b7e9272542a72918043a03549ce4c5eb07e8bca385ebed2fe9301da2badf"
+      }
+    },
+    {
+      "updates_completed": 1464,
+      "best_update": 1272,
+      "examples_seen": 183024,
+      "best_examples_seen": 159024,
+      "epochs_started": 92,
+      "epoch_equivalent": 91.5,
+      "best_validation_mse": 214.71698057561176,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_original",
+        "activation": "softplus",
+        "initialization": "original"
+      },
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.653224238221831,
+          "pearson": 0.8239034939865879,
+          "spearman": 0.6361425763580631,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.485005655649157,
+          "pearson": 0.7963972655344443,
+          "spearman": 0.6594565638126382,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 120.88354070007335,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_original\\seed_42",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "be53330b968a901d81a86764ac2f9dfddc4eab7542c22005b2d10fd7e5ac85d4",
+        "history.csv": "a5060d0612c2deabf562afe18cb20ee560a9688fd74471b8fe839fe8af27bf6b",
+        "val_predictions.npz": "12e02f22dd6f8f5d5515bbf6f4bab7819eff7cf68e0b11b6e9b8a1d2b1347fbe",
+        "initial_outputs.npz": "0b6448f9a468aa63944f0b2c12d51cc36e1b197d860f33c8ed3f09ff7a72cdf5",
+        "val_outputs.npz": "177fa5f4bb288a1bc30648550ae896f69261ee98fc3e21c771a70aa103142de5",
+        "diagnostics.json": "6c47c25e0ddf40207971dbb37eccd9835f2d5c9849aeb3683d1167329709df67"
+      }
+    },
+    {
+      "updates_completed": 1896,
+      "best_update": 1704,
+      "examples_seen": 237024,
+      "best_examples_seen": 213024,
+      "epochs_started": 119,
+      "epoch_equivalent": 118.5,
+      "best_validation_mse": 203.36342593865817,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_original",
+        "activation": "softplus",
+        "initialization": "original"
+      },
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.260554895888806,
+          "pearson": 0.8292827834752136,
+          "spearman": 0.6373065514224853,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.016097427428797,
+          "pearson": 0.8030733257672382,
+          "spearman": 0.6618523926941968,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 143.79175700002816,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_original\\seed_43",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "9658e4898c8cc4d14c1bc52bd5dc707b7c052a7752b805c1d161d6ce132b7d1a",
+        "history.csv": "121bd4b7475d951fe37214c71bbcef07e2a74a55e43935a68ed3810fa5c50ee0",
+        "val_predictions.npz": "9663b2b91335df563b888ffca53ee9876510f735d43e8547423e1588188248f7",
+        "initial_outputs.npz": "8c06894a8a6f8b6bfa476e07a7a876d925461f405b83468ea0a8a6adc831df3d",
+        "val_outputs.npz": "2f0ee16989abe6b83d803dbbc6d2a07407ca1ed95e77f39eeeeaf1a49edabe97",
+        "diagnostics.json": "82b210bc093ed75875e837c1f395361def49a95f8cf727d916e10010cdc0e8a6"
+      }
+    },
+    {
+      "updates_completed": 1608,
+      "best_update": 1416,
+      "examples_seen": 201024,
+      "best_examples_seen": 177024,
+      "epochs_started": 101,
+      "epoch_equivalent": 100.5,
+      "best_validation_mse": 211.0071872633177,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "softplus_original",
+        "activation": "softplus",
+        "initialization": "original"
+      },
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.526086440033245,
+          "pearson": 0.8259114041747884,
+          "spearman": 0.6387504456360356,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.30875247931195,
+          "pearson": 0.7994953688851676,
+          "spearman": 0.6615954941119755,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 136.5751652000472,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\softplus_original\\seed_44",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "2aaec4d0c88c0f9f23df1df23cd5e07a7be974c6080a0e503ed48342bf192df0",
+        "history.csv": "92d2ce356c89c832fa8dd52f4acf6ae298485413a1710754543de7c0a309e6b4",
+        "val_predictions.npz": "edeec2f98ba71cb33bee38e75583b9086f498fd7692c5f5eae9b72e3ee483eda",
+        "initial_outputs.npz": "5d8d10771c500c17302db6c12a8e7434d9a14426bdeba4686027b1f350feb393",
+        "val_outputs.npz": "af0eb4b85e46e9fedc0e4d07209e69254f62bd597936ec661c2d147512e033ae",
+        "diagnostics.json": "be325ea642f0263e2ece8d3e3812c7d7bcf145f22efe32c7ceb0475977417c75"
+      }
+    },
+    {
+      "updates_completed": 1896,
+      "best_update": 1704,
+      "examples_seen": 237024,
+      "best_examples_seen": 213024,
+      "epochs_started": 119,
+      "epoch_equivalent": 118.5,
+      "best_validation_mse": 205.43437644554936,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_near_one",
+        "activation": "relu",
+        "initialization": "near_one"
+      },
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.33298211976661,
+          "pearson": 0.8295976103672463,
+          "spearman": 0.642879640573786,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.120591232960663,
+          "pearson": 0.8029855657229984,
+          "spearman": 0.663962424235364,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 148.49530599999707,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_near_one\\seed_42",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "a852bd56c49dceb61ba1973a9fb7d9b9a851615f96969216915e4d6ebac15d90",
+        "history.csv": "45283292217d81e2096ffefeab1cf324c7747cca681640ba8c0354f0f432b9c2",
+        "val_predictions.npz": "f35caa82fdba5d52b4b82c4eb428c15fe5e751541b9e88791d6ecf82b7991005",
+        "initial_outputs.npz": "3e7c306b4155602c32dcee6e9e73438db9d7221251b1bb028a4fecc60e9eaa8b",
+        "val_outputs.npz": "e917b1f1505c620ed6a87d6f09a9b23d6df812ef6622d228bd6084dd54ec913b",
+        "diagnostics.json": "c64fc4b6088dfedac91b6be7fb8caea73ce0f7221ab7a73071f95869874dadeb"
+      }
+    },
+    {
+      "updates_completed": 2016,
+      "best_update": 1824,
+      "examples_seen": 252000,
+      "best_examples_seen": 228000,
+      "epochs_started": 126,
+      "epoch_equivalent": 126.0,
+      "best_validation_mse": 206.81967501485266,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_near_one",
+        "activation": "relu",
+        "initialization": "near_one"
+      },
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.38122647811558,
+          "pearson": 0.8266045423916686,
+          "spearman": 0.6344610420386847,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.143545279947695,
+          "pearson": 0.8005423679602298,
+          "spearman": 0.6565193645690657,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 153.31925109995063,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_near_one\\seed_43",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "67116ff878dd7f421cd132dda1da475f002e5874a4a06846dcd5e35d22c202e9",
+        "history.csv": "367ca27b25b0f0210d30202cfd5135eba5c0be89286ddfa0a5854536abf55ee5",
+        "val_predictions.npz": "3cfb4f8062debc49a1249c7b1c2657e403e93054758adc7a47a4788ea85b082d",
+        "initial_outputs.npz": "9cc3f6725d281cf79e562c3839c018a11206750d25494208ab81ed391474e693",
+        "val_outputs.npz": "88b548c21cf30372156426577d25fbf3a27cb9c5f556c75f84c4a10a42f2a097",
+        "diagnostics.json": "49a0ce65a7ca3c7fe636b5cf722e6aee8691b2c9a57ddae001b5f5c64ab09bd4"
+      }
+    },
+    {
+      "updates_completed": 1824,
+      "best_update": 1632,
+      "examples_seen": 228000,
+      "best_examples_seen": 204000,
+      "epochs_started": 114,
+      "epoch_equivalent": 114.0,
+      "best_validation_mse": 210.5130560182812,
+      "stop_reason": "early_stopping",
+      "condition": {
+        "id": "relu_near_one",
+        "activation": "relu",
+        "initialization": "near_one"
+      },
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "validation": {
+        "all_16": {
+          "rmse": 14.509068061673748,
+          "pearson": 0.82610500896908,
+          "spearman": 0.6371355697125188,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.30422256941754,
+          "pearson": 0.799705952424947,
+          "spearman": 0.6621145346883359,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 92.33069199998863,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_exactly_reproduced": null,
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\activation_initialization_20261008\\training\\relu_near_one\\seed_44",
+      "dataset_sha256": "af443bd3a2aa0766453aac26a6217cb2cbe42848cf5cabff6b9252baa417df25",
+      "protocol_sha256": "426abcec452f76194915e36b45f0e57a925138ff9746d2e53de7c33e6d4894f9",
+      "file_sha256": {
+        "best.pt": "caa9da3c3d066e32c3128738d492c9a4ef6755503ceb9d4ace8f63791017e160",
+        "history.csv": "40db3d515a9cc2372d114622fb2415616b1540d6d50ac0bccf2e2e6693a03cb4",
+        "val_predictions.npz": "a40ffaeae4dab31d4a2bb6f6dd4e0669e54a89a68aeafa0abc72eef791e640a2",
+        "initial_outputs.npz": "85faa1a31565db14bae7a67a89750508ef2b89f491fe18fe60d9941fa7bca351",
+        "val_outputs.npz": "4bab4017fde08c023c1529e7cd03572e72759650c24e2ffb5a51f29e4cc0b05f",
+        "diagnostics.json": "93c7a7af09e473249b36f859bdcbe09d605444f5557699fa8d3765e3be613735"
+      }
+    }
+  ]
+}

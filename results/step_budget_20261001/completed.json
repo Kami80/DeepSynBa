@@ -1,0 +1,711 @@
+{
+  "completed_utc": "2026-10-01T09:13:40.326419+00:00",
+  "new_training_jobs": 18,
+  "new_training_seconds": 1440.8507373000011,
+  "total_optimizer_updates": 37464,
+  "selection_sha256": "7a5caae4f078524c31887da1b1f7a52f0f3fa7baeca4459841576f1c7918408d",
+  "runs": [
+    {
+      "updates_completed": 2184,
+      "best_update": 1992,
+      "examples_seen": 273000,
+      "best_examples_seen": 249000,
+      "epochs_started": 91,
+      "epoch_equivalent": 91.0,
+      "best_validation_mse": 191.64528500599926,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 42,
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 13.843600868487911,
+          "pearson": 0.8423990855245657,
+          "spearman": 0.6556758113965387,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 16.538917118372687,
+          "pearson": 0.8179049849584933,
+          "spearman": 0.6797988029538798,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 90.78338199999962,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "f739ccfcfcd99bd59409a1a49cd95c3dcdb968ea3ec9445b9616dc4306d92940",
+      "validation_predictions_sha256": "f53b01e01616d6f6cc66c0be89548a9472f67fea656247ad4bf4dad2ae710e35",
+      "history_sha256": "13af58e198d6fcca5923549deb0223efcf46479dda115e0accb46e26898a7fc5",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\positive_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 1272,
+      "best_update": 1080,
+      "examples_seen": 159000,
+      "best_examples_seen": 135000,
+      "epochs_started": 53,
+      "epoch_equivalent": 53.0,
+      "best_validation_mse": 208.1700713809327,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 43,
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.42810006137096,
+          "pearson": 0.8258137074017953,
+          "spearman": 0.6412545158819799,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.18474714061614,
+          "pearson": 0.8004951949904435,
+          "spearman": 0.6657012731648354,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 54.52822300000025,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "978a3e128127017712856405d675ccbf086453ce49434383f3033c8c1baf7720",
+      "validation_predictions_sha256": "31412b0cda11ccace51294decb759adbf5410c5ee63327c5404b18d527e1b1c4",
+      "history_sha256": "477f0ba6d1ac2da76b2c9ebcd69376a098617351cd17392671947c896ee24fc3",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\positive_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2040,
+      "best_update": 1848,
+      "examples_seen": 255000,
+      "best_examples_seen": 231000,
+      "epochs_started": 85,
+      "epoch_equivalent": 85.0,
+      "best_validation_mse": 192.4705041274022,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 44,
+      "training_matrices": 3000,
+      "parameters": 40944401,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 13.87337392732576,
+          "pearson": 0.8401983222089504,
+          "spearman": 0.649721675386904,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 16.6294735906268,
+          "pearson": 0.8146816025103347,
+          "spearman": 0.6740955796409352,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 90.90903520000029,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "7f72e6925fb280163ac16ef48f85f27bd584f1df74f434e2d4ef20b65eb0462d",
+      "validation_predictions_sha256": "fa4b173db194983a3a3e5cada3574d80f4ad52480d56843737ad757779784e5a",
+      "history_sha256": "0f5bee346b3d923b414edcb8176c8cdde82d51ea7cb56ac590a3e5ddb4072628",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\positive_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2376,
+      "examples_seen": 300000,
+      "best_examples_seen": 297000,
+      "epochs_started": 100,
+      "epoch_equivalent": 100.0,
+      "best_validation_mse": 211.04486642221426,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 42,
+      "training_matrices": 3000,
+      "parameters": 3499409,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.527383330187659,
+          "pearson": 0.8225103863836649,
+          "spearman": 0.6435609209625465,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.353360157123106,
+          "pearson": 0.7950433279657739,
+          "spearman": 0.6666681776667114,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 74.52188480000041,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "d5dfe248a3813faf159febdbdad89971fc5616ada0a4447440bd28a46749b05f",
+      "validation_predictions_sha256": "a554aa1af584afcb8a48ead1a3dbded8fb8f550dd4bd1e0b929ecb3f73d4cafc",
+      "history_sha256": "56d80d8b825141fddce90e04cd8c78feab27be59529190c43754277adfee3f46",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\small_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2376,
+      "examples_seen": 300000,
+      "best_examples_seen": 297000,
+      "epochs_started": 100,
+      "epoch_equivalent": 100.0,
+      "best_validation_mse": 207.67853770221618,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 43,
+      "training_matrices": 3000,
+      "parameters": 3499409,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.411056092535903,
+          "pearson": 0.8238029690215568,
+          "spearman": 0.6416853007782284,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.24458745403165,
+          "pearson": 0.7962447840956253,
+          "spearman": 0.6634260305281907,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 80.97267900000043,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "47ec54e0e9cede97b543d571d229a3a32f0676b9433ee6ceec473ccc19441369",
+      "validation_predictions_sha256": "da784005652520d63db26e6576d9cb019149808b6c2eb531f6e049421ee2538d",
+      "history_sha256": "b10df3cf60b0d4d37862588382367f80c583772fb3781abff160376efdb05f4f",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\small_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2352,
+      "examples_seen": 300000,
+      "best_examples_seen": 294000,
+      "epochs_started": 100,
+      "epoch_equivalent": 100.0,
+      "best_validation_mse": 208.0693815044772,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 44,
+      "training_matrices": 3000,
+      "parameters": 3499409,
+      "batches_per_epoch": 24,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.42461027218681,
+          "pearson": 0.8244992373959097,
+          "spearman": 0.6396271627680987,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.23201316557161,
+          "pearson": 0.7979438897204282,
+          "spearman": 0.6627223522949462,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 77.67954699999973,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": true,
+      "checkpoint_sha256": "d41894a70c5648aa0a7904454f4bfb57799bb26de2fb61161cb548f05c934785",
+      "validation_predictions_sha256": "6ed85a007d3b189ae45ecd4f7ec80d417ba0baf0fec0d66d90e3ee37c06f7f11",
+      "history_sha256": "094071175979b122f7ce60c8d0ab2dc7417dfd7d7072eee6e4dde601e9057175",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_3000\\small_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2064,
+      "best_update": 1872,
+      "examples_seen": 258000,
+      "best_examples_seen": 234000,
+      "epochs_started": 258,
+      "epoch_equivalent": 258.0,
+      "best_validation_mse": 255.1578850115698,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 42,
+      "training_matrices": 1000,
+      "parameters": 40944401,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 15.973662229168669,
+          "pearson": 0.7839374344635034,
+          "spearman": 0.619482941213824,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 18.919830939798764,
+          "pearson": 0.7542994665477939,
+          "spearman": 0.6379994492339673,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 92.54361289999997,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "af77aae626b6a6aa459a22374bb4b4a32f5b491fa54cac8ef2f21df8472d2241",
+      "validation_predictions_sha256": "eb677d089e36cddd478cc8f6f7668e27cdc5968834821d76bfd9cd8dc81d2888",
+      "history_sha256": "02152c289f6db2d4dd921eff8ddca50f3f16751999ca7d70ea5243febaf33757",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\positive_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 1536,
+      "best_update": 1344,
+      "examples_seen": 192000,
+      "best_examples_seen": 168000,
+      "epochs_started": 192,
+      "epoch_equivalent": 192.0,
+      "best_validation_mse": 260.96001149857807,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 43,
+      "training_matrices": 1000,
+      "parameters": 40944401,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 16.154256760946264,
+          "pearson": 0.7783730118841103,
+          "spearman": 0.6134173345287326,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 19.116497549475838,
+          "pearson": 0.7496944695220252,
+          "spearman": 0.6329538764078321,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 70.05571799999962,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "78bfe6ebd26cdefe5ec711ef4bd6469a61f07020dba50b4db8c4e78b244d3052",
+      "validation_predictions_sha256": "ae5bc725d63b397bce70ca419f3ebcb9993af93b0d092a15a4d83954f2264d0b",
+      "history_sha256": "ce95bd363f019b9ab08ba7f1f77bc714711827c4b6a5313786546313be3ffd6f",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\positive_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 1392,
+      "best_update": 1200,
+      "examples_seen": 174000,
+      "best_examples_seen": 150000,
+      "epochs_started": 174,
+      "epoch_equivalent": 174.0,
+      "best_validation_mse": 261.07559749618855,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 44,
+      "training_matrices": 1000,
+      "parameters": 40944401,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 16.15783393577829,
+          "pearson": 0.7784636014371693,
+          "spearman": 0.6164304039555748,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 19.10021512726215,
+          "pearson": 0.7495821585210258,
+          "spearman": 0.6341567095194276,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 63.47492020000027,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "4cac5272f4311bc0f04170f13260e972bd1267feba638bfe06249a11ca6638fc",
+      "validation_predictions_sha256": "6d573d0c16edc8de26d10093972513232c813caf804b51234963a0c2d1bf5e81",
+      "history_sha256": "84b5fae1cc29cdf2ac0ae27cd0134d8d28a915a2872d1168986224be8eebbda2",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\positive_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2400,
+      "examples_seen": 300000,
+      "best_examples_seen": 300000,
+      "epochs_started": 300,
+      "epoch_equivalent": 300.0,
+      "best_validation_mse": 260.46557888686107,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 42,
+      "training_matrices": 1000,
+      "parameters": 3499409,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 16.138946027757235,
+          "pearson": 0.7776684629053894,
+          "spearman": 0.6184103383947942,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 19.100894763144613,
+          "pearson": 0.7485415548295463,
+          "spearman": 0.6365843190589073,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 78.90281159999995,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "d47e708f362bf2e7069394eb38dd7f4ac64782551feab8570f1fffdfb7819816",
+      "validation_predictions_sha256": "ce53ab731194e5741e728f5140cee7b013bfea6d6ebba7f1b9626d3ec5be64d9",
+      "history_sha256": "28168c074a25c677591824a11001c99d868cda62e8ae8ae5bede5fab20bd3003",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\small_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 1968,
+      "best_update": 1776,
+      "examples_seen": 246000,
+      "best_examples_seen": 222000,
+      "epochs_started": 246,
+      "epoch_equivalent": 246.0,
+      "best_validation_mse": 276.64936336076096,
+      "stop_reason": "early_stopping",
+      "variant": "small_swap",
+      "seed": 43,
+      "training_matrices": 1000,
+      "parameters": 3499409,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 16.63277978453274,
+          "pearson": 0.7609438746250705,
+          "spearman": 0.6099662534636466,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 19.729262899901173,
+          "pearson": 0.7290725709670566,
+          "spearman": 0.6247921172860286,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 60.82445009999992,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "ffabf9aca18e0949d4160f5c5ddf6133b8f6755a4eef82a7ff7bd1311ef25937",
+      "validation_predictions_sha256": "efb720a8ece66d82253dc3c5260c0f02fc26320ab9572fe033084916896a6bd1",
+      "history_sha256": "74ce57cd49b7768246d4235f099c2467ce9d195e89d5773922990ba2d9930c0b",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\small_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2400,
+      "examples_seen": 300000,
+      "best_examples_seen": 300000,
+      "epochs_started": 300,
+      "epoch_equivalent": 300.0,
+      "best_validation_mse": 269.4585684857042,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 44,
+      "training_matrices": 1000,
+      "parameters": 3499409,
+      "batches_per_epoch": 8,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 16.415193221089545,
+          "pearson": 0.7688039304624692,
+          "spearman": 0.6131483954423648,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 19.44232262265729,
+          "pearson": 0.7382601668116723,
+          "spearman": 0.6316447267647821,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 75.16958730000079,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "b7c8a3ce1d1886658605d58735151f8f8a4687b8c3331e4cb31a4bbab36e2389",
+      "validation_predictions_sha256": "e3b37f7fb681b85d81e4361898affdf5395d9b783e7ebdaafbb9223c5d6335ce",
+      "history_sha256": "3261b6bb570329c19f4f42622b2680ee768165a40573d8e3737f2e0d5401e34b",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_1000\\small_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2208,
+      "best_update": 2016,
+      "examples_seen": 276000,
+      "best_examples_seen": 252000,
+      "epochs_started": 138,
+      "epoch_equivalent": 138.0,
+      "best_validation_mse": 202.36902939465767,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.225646888442636,
+          "pearson": 0.8311930080337718,
+          "spearman": 0.6456989497667901,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.007166059542065,
+          "pearson": 0.8044588577481268,
+          "spearman": 0.6676733757143113,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 99.40710209999997,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "4b8a59635a1fdf8f39a772f4065803407ca573a7310c933d9b53e4ac6eebb0f5",
+      "validation_predictions_sha256": "f737833dedc1cfe7b45e9a9a880ac0e612a1bb392053d756f166475c8a8e48e0",
+      "history_sha256": "f111ad2edd4a40414198d67e2006d40dd60b1dcb0e80b419af9835323e647419",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\positive_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2160,
+      "best_update": 1968,
+      "examples_seen": 270000,
+      "best_examples_seen": 246000,
+      "epochs_started": 135,
+      "epoch_equivalent": 135.0,
+      "best_validation_mse": 203.18801271769667,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.254403274697145,
+          "pearson": 0.829832253296483,
+          "spearman": 0.6412526693650733,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.032412939927557,
+          "pearson": 0.8038062736728023,
+          "spearman": 0.6654704670564984,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 107.51439030000074,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "798491fd918bde757df323c8c4fc8bbb550f6a52dbf3d9da04e2a30511c2c953",
+      "validation_predictions_sha256": "34bd00d192406a23eca7b8ab82bc460dd205920c79ea7fe47a14185b6a3cc204",
+      "history_sha256": "b0c4a21a35136d6bb31ec3148fbf24a0138ec48b3aee0210a84a0f2989dd53b6",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\positive_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 1632,
+      "best_update": 1440,
+      "examples_seen": 204000,
+      "best_examples_seen": 180000,
+      "epochs_started": 102,
+      "epoch_equivalent": 102.0,
+      "best_validation_mse": 211.63833534634315,
+      "stop_reason": "early_stopping",
+      "variant": "positive_swap",
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 40944401,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.547794861983144,
+          "pearson": 0.8245165271846036,
+          "spearman": 0.6356540433987301,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.33909065638157,
+          "pearson": 0.7986712808304658,
+          "spearman": 0.6598163461195843,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 89.0069125,
+      "peak_cuda_memory_mib": 791.5458984375,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "aa397abab989f341ecd65b21bacaa6aa3b4259d29d105aa2198ed300fa93d1dd",
+      "validation_predictions_sha256": "c8149dfc12c924789c71409dd3c67f6fab26b3c1019696ae47321af0523c8570",
+      "history_sha256": "a75e4d77de4ac80feb01083e3a9bd7bcd0470bcb4341a3fd4fc012e169daa2df",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\positive_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2400,
+      "examples_seen": 300000,
+      "best_examples_seen": 300000,
+      "epochs_started": 150,
+      "epoch_equivalent": 150.0,
+      "best_validation_mse": 219.71588974232506,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 42,
+      "training_matrices": 2000,
+      "parameters": 3499409,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.822816525287124,
+          "pearson": 0.8145420127898868,
+          "spearman": 0.6381663379269454,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.64162352041109,
+          "pearson": 0.7876792397432808,
+          "spearman": 0.6610963972574289,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 86.82122449999952,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "a834829d74362f1660fc747d2914c0c8fc06b8e93bd01daea4035d24d47aa53a",
+      "validation_predictions_sha256": "629455021bc17ccfe953c480cf21f32e368dc79c82ed642698db66950d50a4d6",
+      "history_sha256": "28c68f0da01386f24d2952d7cd35e59f958696e64ce9a0ecf86b3b17855efca5",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\small_swap\\seed_42",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2208,
+      "best_update": 2016,
+      "examples_seen": 276000,
+      "best_examples_seen": 252000,
+      "epochs_started": 138,
+      "epoch_equivalent": 138.0,
+      "best_validation_mse": 225.23033235973207,
+      "stop_reason": "early_stopping",
+      "variant": "small_swap",
+      "seed": 43,
+      "training_matrices": 2000,
+      "parameters": 3499409,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 15.00767578140373,
+          "pearson": 0.8067147084267198,
+          "spearman": 0.6272641595976988,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.863538978056997,
+          "pearson": 0.7790596240362053,
+          "spearman": 0.6486425198982726,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 70.28634349999993,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "d7a369f88a0042fa96a271348e851de4e3af62450c31192bba79757e76cd6c04",
+      "validation_predictions_sha256": "bccdf147ddd0ed8b2e45b14e0608342a4b8f2375c4ec691fd9d37d7b2080823f",
+      "history_sha256": "2a987e0cdf6185973a0abbab5c0062d07d48640bbbec8655c246cf0c58087314",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\small_swap\\seed_43",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    },
+    {
+      "updates_completed": 2400,
+      "best_update": 2376,
+      "examples_seen": 300000,
+      "best_examples_seen": 297024,
+      "epochs_started": 150,
+      "epoch_equivalent": 150.0,
+      "best_validation_mse": 220.426994744018,
+      "stop_reason": "update_limit",
+      "variant": "small_swap",
+      "seed": 44,
+      "training_matrices": 2000,
+      "parameters": 3499409,
+      "batches_per_epoch": 16,
+      "maximum_updates": 2400,
+      "validation": {
+        "all_16": {
+          "rmse": 14.846783986574938,
+          "pearson": 0.8119975023005287,
+          "spearman": 0.6309712549859849,
+          "dose_points": 16000
+        },
+        "combination_9": {
+          "rmse": 17.700354080082747,
+          "pearson": 0.7846115763388829,
+          "spearman": 0.6534086758871699,
+          "dose_points": 9000
+        }
+      },
+      "training_seconds": 77.44891329999973,
+      "peak_cuda_memory_mib": 127.48291015625,
+      "control_3000_exactly_reproduced": null,
+      "checkpoint_sha256": "82cd726cea38cd14a396ba450cf22a4c4d7150b69dae6b0702bd2c9e13eba579",
+      "validation_predictions_sha256": "7ddee8c956e4fb9c7b1dae47d65c26d8fd0329c62c8eab1d26c4a24f206eb441",
+      "history_sha256": "ac59af94c3744cb645e6301112903413cd0ff73a5ab27bfb934581225438b5db",
+      "folder": "C:\\Users\\Asus\\.codex\\worktrees\\3a82\\DeepSynBa\\runs\\step_budget_20261001\\training\\n_2000\\small_swap\\seed_44",
+      "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+      "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034"
+    }
+  ]
+}

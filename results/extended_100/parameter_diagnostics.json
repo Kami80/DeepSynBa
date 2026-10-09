@@ -1,0 +1,170 @@
+{
+  "42": {
+    "e1_mean": {
+      "minimum": 0.034291382879018784,
+      "maximum": 0.9971058964729309,
+      "mean": 0.8402321338653564,
+      "zero_fraction": 0.0
+    },
+    "e2_mean": {
+      "minimum": 8.642469765618443e-05,
+      "maximum": 0.9957165122032166,
+      "mean": 0.4067346155643463,
+      "zero_fraction": 0.0
+    },
+    "e3_mean": {
+      "minimum": 0.013609718531370163,
+      "maximum": 0.9990880489349365,
+      "mean": 0.7555127143859863,
+      "zero_fraction": 0.0
+    },
+    "logC1_mean": {
+      "minimum": -4.366373062133789,
+      "maximum": 0.050675492733716965,
+      "mean": -1.9931185245513916,
+      "zero_fraction": 0.0
+    },
+    "logC2_mean": {
+      "minimum": -6.626420974731445,
+      "maximum": 3.6570329666137695,
+      "mean": 0.32458341121673584,
+      "zero_fraction": 0.0
+    },
+    "h1_mean": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "zero_fraction": 1.0
+    },
+    "h2_mean": {
+      "minimum": 0.1686428338289261,
+      "maximum": 1.9316545724868774,
+      "mean": 0.9576517939567566,
+      "zero_fraction": 0.0
+    },
+    "sigma_mean": {
+      "minimum": 0.0,
+      "maximum": 1.5876213312149048,
+      "mean": 0.07594557851552963,
+      "zero_fraction": 0.757
+    },
+    "alpha_mean": {
+      "minimum": 0.0,
+      "maximum": 5.763731479644775,
+      "mean": 1.9807994365692139,
+      "zero_fraction": 0.051
+    }
+  },
+  "43": {
+    "e1_mean": {
+      "minimum": 0.0060801152139902115,
+      "maximum": 0.9901385307312012,
+      "mean": 0.6005280613899231,
+      "zero_fraction": 0.0
+    },
+    "e2_mean": {
+      "minimum": 0.018536169081926346,
+      "maximum": 0.9975491166114807,
+      "mean": 0.9339286088943481,
+      "zero_fraction": 0.0
+    },
+    "e3_mean": {
+      "minimum": 0.98729008436203,
+      "maximum": 0.9995567202568054,
+      "mean": 0.9982549548149109,
+      "zero_fraction": 0.0
+    },
+    "logC1_mean": {
+      "minimum": -3.51719331741333,
+      "maximum": 1.866360068321228,
+      "mean": -0.7189327478408813,
+      "zero_fraction": 0.0
+    },
+    "logC2_mean": {
+      "minimum": -2.0903406143188477,
+      "maximum": 2.195009469985962,
+      "mean": 0.04559480771422386,
+      "zero_fraction": 0.0
+    },
+    "h1_mean": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "zero_fraction": 1.0
+    },
+    "h2_mean": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "zero_fraction": 1.0
+    },
+    "sigma_mean": {
+      "minimum": 0.0,
+      "maximum": 1.7461340427398682,
+      "mean": 0.37745538353919983,
+      "zero_fraction": 0.373
+    },
+    "alpha_mean": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "zero_fraction": 1.0
+    }
+  },
+  "44": {
+    "e1_mean": {
+      "minimum": 0.026694826781749725,
+      "maximum": 0.996659517288208,
+      "mean": 0.82706618309021,
+      "zero_fraction": 0.0
+    },
+    "e2_mean": {
+      "minimum": 0.00011872976028826088,
+      "maximum": 0.99737548828125,
+      "mean": 0.40552929043769836,
+      "zero_fraction": 0.0
+    },
+    "e3_mean": {
+      "minimum": 0.011681927368044853,
+      "maximum": 0.9970937967300415,
+      "mean": 0.7280688285827637,
+      "zero_fraction": 0.0
+    },
+    "logC1_mean": {
+      "minimum": -3.178060293197632,
+      "maximum": 0.7542749643325806,
+      "mean": -1.5367763042449951,
+      "zero_fraction": 0.0
+    },
+    "logC2_mean": {
+      "minimum": -6.229792594909668,
+      "maximum": 3.5635673999786377,
+      "mean": 0.4020656645298004,
+      "zero_fraction": 0.0
+    },
+    "h1_mean": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "zero_fraction": 1.0
+    },
+    "h2_mean": {
+      "minimum": 0.0,
+      "maximum": 2.365910768508911,
+      "mean": 1.0690674781799316,
+      "zero_fraction": 0.001
+    },
+    "sigma_mean": {
+      "minimum": 0.0,
+      "maximum": 0.7073649764060974,
+      "mean": 0.030662434175610542,
+      "zero_fraction": 0.851
+    },
+    "alpha_mean": {
+      "minimum": 0.0,
+      "maximum": 4.777030944824219,
+      "mean": 1.9652117490768433,
+      "zero_fraction": 0.058
+    }
+  }
+}

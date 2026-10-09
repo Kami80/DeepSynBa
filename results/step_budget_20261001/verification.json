@@ -1,0 +1,128 @@
+{
+  "protocol_sha256": "7f8384f7daac2295a44c025f08e5b7fd852d6a2701cde0c62fe7d567349fb034",
+  "selection_sha256": "7a5caae4f078524c31887da1b1f7a52f0f3fa7baeca4459841576f1c7918408d",
+  "conditions": 36,
+  "new_fits": 18,
+  "exact_3000_control_reproductions": 6,
+  "independent_metric_checks": 36,
+  "update_exposure_scheduler_patience_audit": true,
+  "validation_ranking_verified": true,
+  "no_new_holdout_inference": true,
+  "checkpoint_reloads": [
+    {
+      "training_matrices": 3000,
+      "variant": "positive_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 3000,
+      "variant": "positive_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 3000,
+      "variant": "positive_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 3000,
+      "variant": "small_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 3000,
+      "variant": "small_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 3000,
+      "variant": "small_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "positive_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "positive_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "positive_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "small_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "small_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 1000,
+      "variant": "small_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "positive_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "positive_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "positive_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "small_swap",
+      "seed": 42,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "small_swap",
+      "seed": 43,
+      "validation_reload_exact": true
+    },
+    {
+      "training_matrices": 2000,
+      "variant": "small_swap",
+      "seed": 44,
+      "validation_reload_exact": true
+    }
+  ],
+  "correctness_suite_log_sha256": "4cf33385335988c8d73b8a074cd939389358ddc9c8877c5c489fe0f7ec294345",
+  "analysis_source_sha256": {
+    "analyze_step_budget.py": "1ce59e0f46f0f077cb26089557acc5e92d6add4821d844c21798784aab8006c6",
+    "analyze_extended.py": "fb0e8ff42a35b5d2c45157f701a0eb9d782edcd10cfd841c0f8628c30614fc9b",
+    "tests/test_step_budget.py": "c4eb28cba20ac13a3b772f7ee180121a315dacf3a1f342957d8a6596dcad84bf",
+    "tests/test_step_budget_analysis.py": "3ae8502250652c08382804e79ed6e3c0732fdb93cded3531db6ae2f189ced3fe"
+  }
+}

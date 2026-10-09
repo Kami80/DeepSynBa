@@ -1,0 +1,11 @@
+# Paths resolve relative to this file. The full released model comes from config.yaml.
+base_config: config.yaml
+data_dir: data/small
+seed: 42
+device: auto
+batch_size: 128
+num_workers: 0  # Reliable on Windows; this subset is already held in memory.
+max_epochs: 30
+patience: 8
+grad_norm_clip: 5.0
+cpu_threads: 8

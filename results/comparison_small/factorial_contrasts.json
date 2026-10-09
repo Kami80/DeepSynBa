@@ -1,0 +1,112 @@
+[
+  {
+    "comparison": "Positive-output package",
+    "matched_backgrounds": 4,
+    "validation_rmse": {
+      "mean_delta": -3.1421177428426112,
+      "sample_sd": 0.8086568319724019,
+      "seed_deltas": [
+        -2.872106588087314,
+        -4.051233360283315,
+        -2.503013280157205
+      ]
+    },
+    "test_rmse": {
+      "mean_delta": -3.184917343838444,
+      "sample_sd": 0.93821893982806,
+      "seed_deltas": [
+        -2.8064619536302704,
+        -4.2532544845002915,
+        -2.4950355933847703
+      ]
+    }
+  },
+  {
+    "comparison": "Smaller model",
+    "matched_backgrounds": 4,
+    "validation_rmse": {
+      "mean_delta": -2.8351132429772874,
+      "sample_sd": 0.9458925030046434,
+      "seed_deltas": [
+        -2.315650243520825,
+        -3.92690920618606,
+        -2.2627802792249776
+      ]
+    },
+    "test_rmse": {
+      "mean_delta": -2.788951219532906,
+      "sample_sd": 1.1099900822186015,
+      "seed_deltas": [
+        -2.2201252004510383,
+        -4.068052975685192,
+        -2.0786754824624865
+      ]
+    }
+  },
+  {
+    "comparison": "Drug-order augmentation",
+    "matched_backgrounds": 4,
+    "validation_rmse": {
+      "mean_delta": -0.45804108735748256,
+      "sample_sd": 0.11417172563281254,
+      "seed_deltas": [
+        -0.46969193486043936,
+        -0.3384906608655278,
+        -0.5659406663464805
+      ]
+    },
+    "test_rmse": {
+      "mean_delta": -0.312918838785239,
+      "sample_sd": 0.07045075308814525,
+      "seed_deltas": [
+        -0.33006733863950544,
+        -0.23547692354812177,
+        -0.3732122541680898
+      ]
+    }
+  },
+  {
+    "comparison": "Bias penalty on all-three",
+    "matched_backgrounds": 1,
+    "validation_rmse": {
+      "mean_delta": -0.07472697022850383,
+      "sample_sd": 0.01474262545601657,
+      "seed_deltas": [
+        -0.06230168611170761,
+        -0.09101702471763318,
+        -0.0708621998561707
+      ]
+    },
+    "test_rmse": {
+      "mean_delta": -0.01098784699176214,
+      "sample_sd": 0.02014617579446649,
+      "seed_deltas": [
+        0.011060643395644831,
+        -0.028435989201208045,
+        -0.015588195169723207
+      ]
+    }
+  },
+  {
+    "comparison": "Remove bias on all-three",
+    "matched_backgrounds": 1,
+    "validation_rmse": {
+      "mean_delta": -0.010622802869547717,
+      "sample_sd": 0.24791354310493657,
+      "seed_deltas": [
+        0.25727615256056247,
+        -0.23194354081607216,
+        -0.05720102035313346
+      ]
+    },
+    "test_rmse": {
+      "mean_delta": -0.2180654359647356,
+      "sample_sd": 0.18915563840072738,
+      "seed_deltas": [
+        -0.03739547625460027,
+        -0.414695428790969,
+        -0.20210540284863754
+      ]
+    }
+  }
+]

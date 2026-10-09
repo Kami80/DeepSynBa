@@ -1,0 +1,24 @@
+{
+  "frozen_utc": "2026-09-30T05:58:16.943060+00:00",
+  "diagnostic_seed": 44,
+  "selections": [
+    {
+      "seed": 42,
+      "best_epoch": 43,
+      "validation_rmse": 19.95296598580374,
+      "checkpoint_sha256": "508b49d90ebb7ef96519905ba91f7531df1bfb96ce58a6fdca48dea8e0569e56"
+    },
+    {
+      "seed": 43,
+      "best_epoch": 40,
+      "validation_rmse": 22.96854396011822,
+      "checkpoint_sha256": "4fbfb3cb59adf0bc4776f6ec443d3268a9eeecd03fa50216b4a1d0ab331a136f"
+    },
+    {
+      "seed": 44,
+      "best_epoch": 50,
+      "validation_rmse": 19.809343846710167,
+      "checkpoint_sha256": "22761e9022c6268eb6eaa51be1c6ac50e7214adf84b215dbaeb64468a61c4a2c"
+    }
+  ]
+}

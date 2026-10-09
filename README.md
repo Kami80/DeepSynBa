@@ -1,4 +1,33 @@
+# DeepSynBa small data reproduction and experiments
+
+This project adapts the released DeepSynBa implementation for a reproducible
+small-data workflow and controlled model experiments. The original model and
+paper remain the work of the DeepSynBa authors.
+
+The enhanced model achieved fresh-pair holdout RMSE **14.443 ± 0.367**, compared
+with **21.357 ± 2.247** for the local reference, using 3,000 training matrices.
+These are means and sample standard deviations across three seeds on the same
+small-data protocol; they are not comparisons against the paper's full-data scores.
+See the [experiment records and numeric tables](results/README.md).
+
 ![teaser](figures/paper_heading.png)
+
+**Local small-data reproduction:** see [REPRODUCE_SMALL.md](REPRODUCE_SMALL.md)
+for the 5,000-example Windows/CPU/GPU workflow added to this checkout.
+
+**Follow-up experiments:** see [NEXT_STEPS.md](NEXT_STEPS.md) for fresh
+pair-disjoint confirmation and nested 500–3,000-matrix learning curves.
+
+**Equal update-budget study:** see [STEP_BUDGET.md](STEP_BUDGET.md) for 18 new
+fits comparing the enhanced and compact models with a shared optimizer-update limit.
+
+**Activation and initialization:** see [ACTIVATION_INITIALIZATION.md](ACTIVATION_INITIALIZATION.md)
+for the completed 12-fit factorial study, paired effects and head diagnostics.
+
+## Original DeepSynBa project
+
+The description and benchmark scores below are from the
+[official DeepSynBa repository](https://github.com/hikuru/DeepSynBa).
 
 Many cancer monotherapies demonstrate limited clinical efficacy, making combination therapies a
 relevant treatment strategy. The extensive number of potential drug combinations and context-specific response profiles

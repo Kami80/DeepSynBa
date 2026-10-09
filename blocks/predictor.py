@@ -26,7 +26,7 @@ class PredictionHead(nn.Module):
 
 
     def forward(self, input):
-        return self.prediction_head(input.squeeze())
+        return self.prediction_head(input)
 
 
 class Block(nn.Module):
@@ -72,7 +72,7 @@ class DoseResponsePredictor(nn.Module):
                 nn.init.zeros_(param.data)
 
     def forward(self, input):
-        out = self.prediction_head(input.squeeze())
+        out = self.prediction_head(input)
         #out = out.unsqueeze(1)
         #out = self.conv_layers(out)
         #out = self.final_relu(out)

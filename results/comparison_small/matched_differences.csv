@@ -1,0 +1,85 @@
+comparison,metric,seed,control,treatment,delta
+Positive-output package,validation_rmse,42,reference,positive,-5.451603047776885
+Positive-output package,validation_rmse,42,small,positive_small,-0.17753167156447702
+Positive-output package,validation_rmse,42,swap,positive_swap,-5.688169539700642
+Positive-output package,validation_rmse,42,small_swap,positive_small_swap,-0.17112209330725214
+Positive-output package,validation_rmse,43,reference,positive,-8.006191951127818
+Positive-output package,validation_rmse,43,small,positive_small,-0.4897395378743248
+Positive-output package,validation_rmse,43,swap,positive_swap,-8.286986002064754
+Positive-output package,validation_rmse,43,small_swap,positive_small_swap,0.5779840499336366
+Positive-output package,validation_rmse,44,reference,positive,-4.962597225012015
+Positive-output package,validation_rmse,44,small,positive_small,0.16440977814200153
+Positive-output package,validation_rmse,44,swap,positive_swap,-5.363293706650591
+Positive-output package,validation_rmse,44,small_swap,positive_small_swap,0.14942803289178386
+Positive-output package,test_rmse,42,reference,positive,-5.171600661710059
+Positive-output package,test_rmse,42,small,positive_small,-0.36246021906497994
+Positive-output package,test_rmse,42,swap,positive_swap,-5.427321264863936
+Positive-output package,test_rmse,42,small_swap,positive_small_swap,-0.26446566888210654
+Positive-output package,test_rmse,43,reference,positive,-8.295947000069427
+Positive-output package,test_rmse,43,small,positive_small,-0.7416626377716486
+Positive-output package,test_rmse,43,swap,positive_swap,-8.426039836536205
+Positive-output package,test_rmse,43,small_swap,positive_small_swap,0.45063153637611464
+Positive-output package,test_rmse,44,reference,positive,-4.844330297940257
+Positive-output package,test_rmse,44,small,positive_small,0.08532156551818915
+Positive-output package,test_rmse,44,swap,positive_swap,-5.10596144470864
+Positive-output package,test_rmse,44,small_swap,positive_small_swap,-0.1151721964083734
+Smaller model,validation_rmse,42,reference,small,-5.022472820343651
+Smaller model,validation_rmse,42,positive,positive_small,0.2515985558687568
+Smaller model,validation_rmse,42,swap,small_swap,-5.004387078000898
+Smaller model,validation_rmse,42,positive_swap,positive_small_swap,0.512660368392492
+Smaller model,validation_rmse,43,reference,small,-7.740499674098253
+Smaller model,validation_rmse,43,positive,positive_small,-0.22404726084475968
+Smaller model,validation_rmse,43,swap,small_swap,-8.30402997089981
+Smaller model,validation_rmse,43,positive_swap,positive_small_swap,0.5609400810985807
+Smaller model,validation_rmse,44,reference,small,-5.033367568008607
+Smaller model,validation_rmse,44,positive,positive_small,0.09363943514540907
+Smaller model,validation_rmse,44,swap,small_swap,-4.8120573617895435
+Smaller model,validation_rmse,44,positive_swap,positive_small_swap,0.7006643777528314
+Smaller model,test_rmse,42,reference,small,-4.86580148228189
+Smaller model,test_rmse,42,positive,positive_small,-0.05666103963681124
+Smaller model,test_rmse,42,swap,small_swap,-4.560446937933641
+Smaller model,test_rmse,42,positive_swap,positive_small_swap,0.6024086580481889
+Smaller model,test_rmse,43,reference,small,-7.939178224814084
+Smaller model,test_rmse,43,positive,positive_small,-0.3848938625163054
+Smaller model,test_rmse,43,swap,small_swap,-8.41240559416135
+Smaller model,test_rmse,43,positive_swap,positive_small_swap,0.4642657787509705
+Smaller model,test_rmse,44,reference,small,-4.798456929779082
+Smaller model,test_rmse,44,positive,positive_small,0.13119493367936386
+Smaller model,test_rmse,44,swap,small_swap,-4.319114591025247
+Smaller model,test_rmse,44,positive_swap,positive_small_swap,0.6716746572750196
+Drug-order augmentation,validation_rmse,42,reference,swap,-0.4211955776151832
+Drug-order augmentation,validation_rmse,42,positive,positive_swap,-0.6577620695389399
+Drug-order augmentation,validation_rmse,42,small,small_swap,-0.4031098352724296
+Drug-order augmentation,validation_rmse,42,positive_small,positive_small_swap,-0.3967002570152047
+Drug-order augmentation,validation_rmse,43,reference,swap,-0.2534578966825052
+Drug-order augmentation,validation_rmse,43,positive,positive_swap,-0.5342519476194418
+Drug-order augmentation,validation_rmse,43,small,small_swap,-0.8169881934840628
+Drug-order augmentation,validation_rmse,43,positive_small,positive_small_swap,0.2507353943238986
+Drug-order augmentation,validation_rmse,44,reference,swap,-0.5726762127338141
+Drug-order augmentation,validation_rmse,44,positive,positive_swap,-0.9733726943723902
+Drug-order augmentation,validation_rmse,44,small,small_swap,-0.35136600651475014
+Drug-order augmentation,validation_rmse,44,positive_small,positive_small_swap,-0.3663477517649678
+Drug-order augmentation,test_rmse,42,reference,swap,-0.4433130975708792
+Drug-order augmentation,test_rmse,42,positive,positive_swap,-0.6990337007247565
+Drug-order augmentation,test_rmse,42,small,small_swap,-0.13795855322262973
+Drug-order augmentation,test_rmse,42,positive_small,positive_small_swap,-0.039964003039756335
+Drug-order augmentation,test_rmse,43,reference,swap,-0.26441357329473547
+Drug-order augmentation,test_rmse,43,positive,positive_swap,-0.3945064097615134
+Drug-order augmentation,test_rmse,43,small,small_swap,-0.7376409426420008
+Drug-order augmentation,test_rmse,43,positive_small,positive_small_swap,0.45465323150576253
+Drug-order augmentation,test_rmse,44,reference,swap,-0.4973521963712706
+Drug-order augmentation,test_rmse,44,positive,positive_swap,-0.7589833431396542
+Drug-order augmentation,test_rmse,44,small,small_swap,-0.018009857617435898
+Drug-order augmentation,test_rmse,44,positive_small,positive_small_swap,-0.21850361954399844
+Bias penalty on all-three,validation_rmse,42,positive_small_swap,positive_small_swap_bias_l2,-0.06230168611170761
+Bias penalty on all-three,validation_rmse,43,positive_small_swap,positive_small_swap_bias_l2,-0.09101702471763318
+Bias penalty on all-three,validation_rmse,44,positive_small_swap,positive_small_swap_bias_l2,-0.0708621998561707
+Bias penalty on all-three,test_rmse,42,positive_small_swap,positive_small_swap_bias_l2,0.011060643395644831
+Bias penalty on all-three,test_rmse,43,positive_small_swap,positive_small_swap_bias_l2,-0.028435989201208045
+Bias penalty on all-three,test_rmse,44,positive_small_swap,positive_small_swap_bias_l2,-0.015588195169723207
+Remove bias on all-three,validation_rmse,42,positive_small_swap,positive_small_swap_no_bias,0.25727615256056247
+Remove bias on all-three,validation_rmse,43,positive_small_swap,positive_small_swap_no_bias,-0.23194354081607216
+Remove bias on all-three,validation_rmse,44,positive_small_swap,positive_small_swap_no_bias,-0.05720102035313346
+Remove bias on all-three,test_rmse,42,positive_small_swap,positive_small_swap_no_bias,-0.03739547625460027
+Remove bias on all-three,test_rmse,43,positive_small_swap,positive_small_swap_no_bias,-0.414695428790969
+Remove bias on all-three,test_rmse,44,positive_small_swap,positive_small_swap_no_bias,-0.20210540284863754

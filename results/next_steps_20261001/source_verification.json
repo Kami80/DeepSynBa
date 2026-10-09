@@ -1,0 +1,11 @@
+{
+  "holdout_source_rows_checked": 1000,
+  "all_response_values_exact": true,
+  "all_micromolar_doses_exact": true,
+  "all_drug_features_exact": true,
+  "all_cell_features_exact": true,
+  "bootstrap_draws_independently_expanded_per_endpoint": 25,
+  "bootstrap_arithmetic_matches_explicit_cluster_expansion": true,
+  "protocol_sha256": "3d31f7a3b2d188b71ce34825b092d2021b483c30b46c5f067ee159f17c957210",
+  "verification_source_sha256": "ed5eed4e0ed8967025c437e62919d409cf2b5d85d6ef8638219ecfc9cbb6f876"
+}

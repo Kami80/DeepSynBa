@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-09-30T05:55:24.678922+00:00",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "max_epochs": 100,
+  "device": "cuda",
+  "early_stopping_patience": 8,
+  "dataset_sha256": "98693b7b991d1785ec494634d1616d4fa00f40443a492bb165fa0ad1d63ef3a1",
+  "subset_seed": 42,
+  "counts": {
+    "train": 3000,
+    "val": 1000,
+    "test": 1000
+  },
+  "source_files": {
+    "config.small.yaml": "ad2fd21fa35a387809b3dc64bb0509f924ec9ab135f5bfc3d642e30d3ec243cf",
+    "config.yaml": "14b2b10267b34cf488a0fc6732d1492d3ae0af32f3a8cf88fe7a1633bd61777f",
+    "train_small.py": "350eeaab21d0aafaa4a06964ff32b1a8beac16db436b959c3a92cecdfdca31fd",
+    "run_extended.py": "a849d72a0fdda4d584bafce3ceaba5b676e5e41f7ec6aede632c5302336443c6",
+    "deepsynba.py": "12f0089aaa962a54749910d4f885508f6f5e6e32d9e92acb804f3017fece11a0",
+    "blocks/predictor.py": "d3008aafc5ed36471704f372f42ad8a4005f6bef1306019c745e16873142a470",
+    "blocks/drug_encoder.py": "be9f408c394132d399cf4c8db6faa3efd4fdd982f93e18719185c7d6d9ef68fc"
+  },
+  "checkpoint_selection": "Minimum validation MSE within each seed; no test evaluation during training",
+  "diagnostic_model_selection": "Lowest validation RMSE across all three seeds, before test evaluation",
+  "validation_example_selection": "Nearest matrix-RMSE ranks at the 10th, 50th, 90th, and 99th percentiles",
+  "seed_summary": "Arithmetic mean and sample standard deviation (ddof=1); not confidence intervals"
+}

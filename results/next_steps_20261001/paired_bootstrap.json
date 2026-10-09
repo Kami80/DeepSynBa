@@ -1,0 +1,102 @@
+{
+  "all_16": {
+    "clusters": 323,
+    "matrices": 1000,
+    "replicates": 5000,
+    "seed": 20261003,
+    "comparisons": [
+      {
+        "model": "positive_swap",
+        "baseline": "reference",
+        "mean_seed_rmse_difference": -6.913907467210819,
+        "percentile_95_ci": [
+          -7.786810641681256,
+          -6.08483850821524
+        ],
+        "relative_reduction_percent": 32.372504816403435,
+        "relative_reduction_percentile_95_ci": [
+          29.02803255751005,
+          35.76812824800224
+        ]
+      },
+      {
+        "model": "small_swap",
+        "baseline": "reference",
+        "mean_seed_rmse_difference": -6.338078417246207,
+        "percentile_95_ci": [
+          -7.161447714105283,
+          -5.538076510755937
+        ],
+        "relative_reduction_percent": 29.676340775763688,
+        "relative_reduction_percentile_95_ci": [
+          26.42618989369149,
+          32.953818086236495
+        ]
+      },
+      {
+        "model": "small_swap",
+        "baseline": "positive_swap",
+        "mean_seed_rmse_difference": 0.5758290499646126,
+        "percentile_95_ci": [
+          0.3340503739077377,
+          0.8187161337848695
+        ],
+        "relative_reduction_percent": -3.9867867844582072,
+        "relative_reduction_percentile_95_ci": [
+          -5.780302377952041,
+          -2.31621586630187
+        ]
+      }
+    ]
+  },
+  "combination_9": {
+    "clusters": 323,
+    "matrices": 1000,
+    "replicates": 5000,
+    "seed": 20261003,
+    "comparisons": [
+      {
+        "model": "positive_swap",
+        "baseline": "reference",
+        "mean_seed_rmse_difference": -6.5747687323042,
+        "percentile_95_ci": [
+          -7.532977182143661,
+          -5.634625993027303
+        ],
+        "relative_reduction_percent": 27.68770700545524,
+        "relative_reduction_percentile_95_ci": [
+          24.171834780184632,
+          31.22427161961609
+        ]
+      },
+      {
+        "model": "small_swap",
+        "baseline": "reference",
+        "mean_seed_rmse_difference": -5.933071429297289,
+        "percentile_95_ci": [
+          -6.847401180635522,
+          -5.038581495212003
+        ],
+        "relative_reduction_percent": 24.98538732924368,
+        "relative_reduction_percentile_95_ci": [
+          21.55074867678267,
+          28.40153765253235
+        ]
+      },
+      {
+        "model": "small_swap",
+        "baseline": "positive_swap",
+        "mean_seed_rmse_difference": 0.6416973030069109,
+        "percentile_95_ci": [
+          0.34845289906647625,
+          0.9356540859565763
+        ],
+        "relative_reduction_percent": -3.737012842913745,
+        "relative_reduction_percentile_95_ci": [
+          -5.544529725292425,
+          -2.041432463537811
+        ]
+      }
+    ]
+  }
+}

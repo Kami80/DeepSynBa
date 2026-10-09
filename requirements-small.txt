@@ -1,0 +1,13 @@
+# Install CUDA-enabled PyTorch separately; see REPRODUCE_SMALL.md.
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+PyYAML==6.0.3
+# Resolve PyTorch's Python dependencies from PyPI before using its CUDA index.
+# This also avoids older pip's typing-extensions metadata normalization bug.
+filelock==3.18.0
+typing_extensions==4.14.0
+networkx==3.4.2
+Jinja2==3.1.6
+fsspec==2025.3.2
+sympy==1.13.1
