@@ -74,10 +74,11 @@ selection, completion and verification records are retained in
 
 ## Repeat in a fresh directory
 
-Run from this continuation workspace using the existing CUDA environment:
+Run from this repository using the documented CUDA environment and the
+earlier run archive required by this study:
 
 ```powershell
-$pythonExecutable = 'E:\PROJECTS\UNI\DeepSynBa\.venv\Scripts\python.exe'
+$pythonExecutable = '.\.venv\Scripts\python.exe'
 $env:PYTHONDONTWRITEBYTECODE = '1'
 & $pythonExecutable run_activation_initialization.py --stage prepare --output runs/factorial_repeat
 & $pythonExecutable run_activation_initialization.py --stage train --output runs/factorial_repeat

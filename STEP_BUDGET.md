@@ -67,11 +67,11 @@ measurements; earlier/new sessions are not a controlled timing benchmark.
 
 ## Reproduce in a new directory
 
-Use the existing environment; no dependency installation or data download is
-needed on this machine. Run from the worktree:
+Prepare the documented CUDA environment, reference dependency, subset, and
+earlier run archive first. Run from this repository:
 
 ```powershell
-$pythonExecutable = 'E:\PROJECTS\UNI\DeepSynBa\.venv\Scripts\python.exe'
+$pythonExecutable = '.\.venv\Scripts\python.exe'
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:MPLCONFIGDIR = Join-Path (Get-Location).Path 'runs/step_budget_repeat/matplotlib'
 & $pythonExecutable run_step_budget.py --stage prepare --baseline runs/next_steps_20261001 --output runs/step_budget_repeat
@@ -84,8 +84,9 @@ Preparation refuses an existing directory. Training can reuse a fully completed
 job after verifying its frozen identities; partial optimizer state is not
 resumed. Use a new directory to repeat from scratch. The baseline experiment's
 selection and all 18 referenced histories, checkpoints and validation prediction
-files must remain available, including its original 3,000-matrix files under
-`E:\PROJECTS\UNI\DeepSynBa\runs\comparison_small`.
+files must remain available, including the original 3,000-matrix files at the
+paths frozen in that baseline protocol. A new baseline can use
+`runs/comparison_small`; the published result CSVs do not include checkpoints.
 
 Inspect `analysis/validation_per_seed.csv`, `validation_summary.csv`,
 `paired_changes_per_seed.csv` and `paired_changes_summary.csv` for numeric

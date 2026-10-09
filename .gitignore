@@ -6,3 +6,20 @@ runs/
 .pytest_cache/
 tmp/
 output/
+
+# Reference files are prepared locally by setup_reference.py.
+/.reference-cache/
+/blocks/
+/config.yaml
+/data.zip
+/dataset.py
+/deepsynba.py
+
+# Original project assets and launch scripts outside this research.
+/figures/
+/train.py
+/trainer.py
+/evaluate.py
+/experimenter.py
+/losses.py
+/requirements.txt

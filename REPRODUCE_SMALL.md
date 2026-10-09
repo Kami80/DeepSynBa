@@ -1,13 +1,16 @@
 # Reproduce DeepSynBa with 5,000 examples
 
-This is the [official DeepSynBa repository](https://github.com/hikuru/DeepSynBa)
-at commit `43c16961da835c8545842d564a8efdfec58bdd2f`, with an additional small-data
-workflow. It runs the released model on a reproducible NCI-ALMANAC subset.
+This is my small-data research workflow using the external
+[official DeepSynBa implementation](https://github.com/hikuru/DeepSynBa)
+at commit `43c16961da835c8545842d564a8efdfec58bdd2f`. Run `setup_reference.py`
+once to fetch and verify the required model, configuration, and data files.
+The workflow runs the released model on a reproducible NCI-ALMANAC subset.
 It is a scaled-down reproduction of the implementation, not a replication of
 the paper's full-data results or all benchmark comparisons.
 
-Your system has an NVIDIA RTX 3070 Laptop GPU (8 GB), an Intel i7-12650H,
-approximately 32 GB RAM, and Python 3.11. The project environment is in `.venv`.
+The recorded experiments used an NVIDIA RTX 3070 Laptop GPU (8 GB), an Intel
+i7-12650H, approximately 32 GB RAM, and Python 3.11. The setup below creates
+the project environment in `.venv`.
 
 ## Enhancement comparison
 
@@ -15,7 +18,7 @@ The separate enhancement workflow compares ten configurations on the same subset
 the full 2×2×2 combinations of positive-output repair, smaller widths, and drug-order
 augmentation, plus bias-penalized and no-bias versions of the combined model.
 Each configuration uses seeds 42, 43, and 44, a 100-epoch cap, and patience eight.
-The original model files and earlier results are preserved.
+The reference model is prepared locally; earlier result records are preserved.
 
 Run the complete comparison in a **new** output directory:
 
@@ -107,7 +110,7 @@ it does not establish the paper's reported full-data accuracy.
 
 ## Run in PowerShell
 
-From `E:\PROJECTS\UNI\DeepSynBa`, after environment and subset preparation:
+From this repository directory, after environment and subset preparation:
 
 ```powershell
 .\.venv\Scripts\python.exe train_small.py
@@ -135,8 +138,9 @@ Use Python 3.11. These commands leave global packages unchanged.
 
 ```powershell
 py -3.11 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-small.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements-analysis.txt
 .\.venv\Scripts\python.exe -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+.\.venv\Scripts\python.exe setup_reference.py
 .\.venv\Scripts\python.exe prepare_small_data.py
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 .\.venv\Scripts\python.exe train_small.py

@@ -33,10 +33,10 @@ reserved evaluation set; this holdout has now been examined.
 
 ## Protocol and artifacts
 
-This worktree continues the completed small-data reproduction and ten-variant
-comparison from `E:\PROJECTS\UNI\DeepSynBa`. The previous project is read-only;
-its workflow files, model shape fixes, and 5,000-matrix subset have been restored
-here with matching source fingerprints. Its original results remain there.
+This study continues the completed small-data reproduction and ten-variant
+comparison. It reuses their frozen checkpoints, model shape fixes, and
+5,000-matrix subset with matching source fingerprints. The full checkpoint
+archive remains local; numeric summaries and protocols are published in `results/`.
 
 The new experiment is `runs/next_steps_20261001`. Its immutable `protocol.json`
 freezes the three previously selected configurations, seeds 42/43/44, all nine
@@ -64,12 +64,12 @@ intervals describe different sources of variability.
 
 ## Run a new experiment
 
-Use the existing CUDA Python environment. On this machine, its executable is
-`E:\PROJECTS\UNI\DeepSynBa\.venv\Scripts\python.exe`. Run from this worktree:
+Use the CUDA Python environment described in `REPRODUCE_SMALL.md`. Run from
+this repository with the required earlier run archive available:
 
 ```powershell
-$pythonExecutable = 'E:\PROJECTS\UNI\DeepSynBa\.venv\Scripts\python.exe'
-& $pythonExecutable run_next_steps.py --stage prepare --previous-root E:\PROJECTS\UNI\DeepSynBa --output runs/next_repeat
+$pythonExecutable = '.\.venv\Scripts\python.exe'
+& $pythonExecutable run_next_steps.py --stage prepare --previous-root . --output runs/next_repeat
 & $pythonExecutable run_next_steps.py --stage confirm --output runs/next_repeat
 & $pythonExecutable run_next_steps.py --stage learning --output runs/next_repeat
 & $pythonExecutable analyze_next_steps.py --experiment runs/next_repeat
@@ -78,11 +78,14 @@ $pythonExecutable = 'E:\PROJECTS\UNI\DeepSynBa\.venv\Scripts\python.exe'
 ```
 
 `--previous-root` identifies the prior experiment files, not a destination for
-new outputs. For another machine, copy the prior workflow and
+new outputs. The example expects the prior archive beneath this repository.
+For another machine, copy the prior workflow and
 `runs/comparison_small` with its protocols, histories, validation predictions,
 metrics and nine finalist checkpoints. Install the documented Python/CUDA
-requirements and preserve their source hashes. No external data download is
-needed; use the bundled, checksum-verified `data.zip` and prepared `data/small`.
+requirements and preserve their source hashes. Use `setup_reference.py` to fetch
+the checksum-verified external `data.zip`, and prepare `data/small` with
+`prepare_small_data.py`. The compact published CSVs do not replace the full
+checkpoint and prediction archive needed to rerun these follow-up stages.
 
 Preparation refuses an existing output directory. Learning can skip fully
 completed jobs after verifying their hashes; partial optimizer state is not

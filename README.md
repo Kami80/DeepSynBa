@@ -1,164 +1,112 @@
-# DeepSynBa small data reproduction and experiments
+# DeepSynBa research on small data and optimization
 
-This project adapts the released DeepSynBa implementation for a reproducible
-small-data workflow and controlled model experiments. The original model and
-paper remain the work of the DeepSynBa authors.
+Research and experiments by **Kami80** on reproducing DeepSynBa with limited
+training data, diagnosing parameter-head failures, and evaluating improvements.
+This repository contains my experimental code, protocols, result tables, figures,
+and report. The original DeepSynBa model is an external reference dependency from
+[the authors' repository](https://github.com/hikuru/DeepSynBa).
 
-The enhanced model achieved fresh-pair holdout RMSE **14.443 ± 0.367**, compared
-with **21.357 ± 2.247** for the local reference, using 3,000 training matrices.
-These are means and sample standard deviations across three seeds on the same
-small-data protocol; they are not comparisons against the paper's full-data scores.
-See the [experiment records and numeric tables](results/README.md).
+[Two-page research report](reports/DeepSynBa_Two_Page_Report.pdf) ·
+[Results and evidence](results/README.md) ·
+[Completed research stages](PROGRESS.md)
 
-![teaser](figures/paper_heading.png)
+## My contributions
 
-**Local small-data reproduction:** see [REPRODUCE_SMALL.md](REPRODUCE_SMALL.md)
-for the 5,000-example Windows/CPU/GPU workflow added to this checkout.
+- Built a deterministic 5,000-matrix NCI-ALMANAC subset with pair-disjoint
+  training, validation, and test partitions and source-data checks.
+- Added a local CPU/GPU training workflow, validation-based checkpoint selection,
+  three-seed analysis, and diagnostics for zero Hill slopes and drug-order effects.
+- Compared ten configurations across three seeds, including positive parameter
+  outputs, smaller networks, drug-order augmentation, and bias controls.
+- Evaluated frozen models on fresh drug pairs and studied nested training subsets
+  of 500, 1,000, 2,000, and 3,000 matrices.
+- Tested equal optimizer-update budgets and separated output activation from
+  initialization in a controlled factorial experiment.
 
-**Follow-up experiments:** see [NEXT_STEPS.md](NEXT_STEPS.md) for fresh
-pair-disjoint confirmation and nested 500–3,000-matrix learning curves.
+## Selected results
 
-**Equal update-budget study:** see [STEP_BUDGET.md](STEP_BUDGET.md) for 18 new
-fits comparing the enhanced and compact models with a shared optimizer-update limit.
+The following models used 3,000 training matrices and the same fresh holdout of
+1,000 matrices from 323 previously unused unordered drug pairs. Lower RMSE is
+better. Values are means ± sample SD across seeds 42, 43, and 44.
 
-**Activation and initialization:** see [ACTIVATION_INITIALIZATION.md](ACTIVATION_INITIALIZATION.md)
-for the completed 12-fit factorial study, paired effects and head diagnostics.
+| Local model | Parameters | Fresh holdout RMSE |
+| --- | ---: | ---: |
+| Reference implementation | 40.94 million | 21.357 ± 2.247 |
+| Positive outputs + drug-order augmentation | 40.94 million | **14.443 ± 0.367** |
+| Compact model + drug-order augmentation | 3.50 million | 15.019 ± 0.011 |
 
-## Original DeepSynBa project
+The enhanced model reduced mean RMSE by **32.4%** relative to the local reference.
+The paired drug-pair bootstrap 95% interval was **29.0–35.8%**, conditional on the
+frozen fitted models. The compact model used **91.5% fewer parameters**.
+[Full confirmation results](results/next_steps_20261001/RESULTS.md).
 
-The description and benchmark scores below are from the
-[official DeepSynBa repository](https://github.com/hikuru/DeepSynBa).
+With an equal update budget and 2,000 training matrices, enhanced validation RMSE
+was **14.343 ± 0.178**. The activation/initialization study found that calibrated
+ReLU also reached **14.408 ± 0.091**: most of the original ReLU gap was recovered
+by initialization calibration. This does not establish equivalence between the
+activations. [Budget results](results/step_budget_20261001/RESULTS.md) ·
+[Factorial results](results/activation_initialization_20261008/RESULTS.md).
 
-Many cancer monotherapies demonstrate limited clinical efficacy, making combination therapies a
-relevant treatment strategy. The extensive number of potential drug combinations and context-specific response profiles
-complicates the prediction of drug combination responses. Existing computational models are typically trained to predict
-a single aggregated synergy score, which summarises drug responses across different dosage combinations, such as Bliss
-or Loewe scores. This oversimplification of the drug-response surface leads to high prediction uncertainty and limited
-actionability because these models fail to differentiate between potency and efficacy. Drug safety could be compromised
-because of the models’ inability to quantify potency in combination regimes.
+These are local small-data results, not a reproduction of the paper's full-data
+benchmark scores. The initial test set was reused during exploratory development;
+the fresh confirmation uses previously unexamined pairs from the same source.
+Later optimization studies report validation results only. Generalization to a
+new experimental source, unseen drugs/cell lines, and biological parameter
+validity remains to be established.
 
-We introduce DeepSynBa, an actionable model that predicts the complete dose-response matrix of drug pairs
-instead of relying on an aggregated synergy score. This is achieved by predicting parameters describing the response surface
-as an intermediate layer in the model. We evaluated DeepSynBa on the NCI-ALMANAC dataset, which comprises nearly
-300,000 drug pair–cell line combinations. DeepSynBa outperforms the state-of-the-art methods in the dose-response
-matrix prediction task across multiple evaluation scenarios, including testing on novel drug combinations, cell lines, and
-drugs, across nine different tissue types. We also show that DeepSynBa yields reliable synergy score predictions. More
-importantly, DeepSynBa can predict drug combination responses across different dosages for untested combinations. The
-intermediate dose-response parameter layer allows for separating efficacy from potency, which informs the selection of
-dosage ranges that optimise efficacy while limiting off-target toxicity in experimental screens. The predictive capability
-and the downstream actionability make DeepSynBa a powerful tool for advancing drug combination research beyond the
-limitations of the current approaches
+## Research records
 
----
-## DeepSynBa Architecture
-![teaser](figures/Fig_1.jpg)
-DeepSynBa is designed to predict the effects of drug combinations on cell 
-lines by incorporating both drug and cell line features. Each drug combination consists of two drugs applied to a single cell
-line, and the model includes two dedicated drug-cell encoder sub-networks. Each encoder focuses on fusing the properties
-of one drug with the gene expression profiles of the cell line, enabling a detailed capture of interactions between the drugs
-and the cellular gene expression profiles.
+| Stage | Experiment guide | Published evidence |
+| --- | --- | --- |
+| Small-data reproduction and diagnostics | [REPRODUCE_SMALL.md](REPRODUCE_SMALL.md) | [Three-seed reference](results/extended_100/RESULTS.md) |
+| Ten-configuration comparison | [REPRODUCE_SMALL.md](REPRODUCE_SMALL.md#enhancement-comparison) | [Comparison results](results/comparison_small/RESULTS.md) |
+| Fresh confirmation and learning curves | [NEXT_STEPS.md](NEXT_STEPS.md) | [Confirmation results](results/next_steps_20261001/RESULTS.md) |
+| Equal optimizer-update budget | [STEP_BUDGET.md](STEP_BUDGET.md) | [Budget results](results/step_budget_20261001/RESULTS.md) |
+| Activation and initialization | [ACTIVATION_INITIALIZATION.md](ACTIVATION_INITIALIZATION.md) | [Factorial results](results/activation_initialization_20261008/RESULTS.md) |
 
-The model uses feature representations for drugs (d<sub>i</sub> and d<sub>j</sub> ) and cell lines (c<sub>k</sub>). Drug features are generated
-as vector embeddings from the MoLFormer model [Ross et al., 2022], and the cell line features are represented by
-vectors of untreated gene expression data. These features are concatenated into a combined vector ([d<sub>i</sub>; c<sub>k</sub>] or [d<sub>j</sub> ; <sub>ck</sub>]) and
-then processed through a series of fully connected layers. These layers transform the combined drug-cell line features into a
-comprehensive representation that captures the interactions between the drugs and the cell line. The outputs of the drug-
-cell encoders are drug-induced gene expression feature maps, which encapsulate the interaction between each drug and the
-cell line at a molecular level. The feature maps from each of the encoders are then concatenated to produce a unified
-representation, effectively summarising the combined impact of both drugs on the cell line.
+The `results/` directory contains numeric summaries, per-seed CSVs, frozen
+protocols, analysis figures, and verification records. Large model checkpoints,
+full prediction arrays, prepared datasets, and the Python environment remain in
+the local run archive. Some recorded paths and fingerprints identify that
+historical archive; published records are retained without changing their values.
 
-Subsequently, the unified representation is inputted into eight distinct prediction heads, each corresponding to one
-parameter in the SynBa likelihood function [Zhang et al., 2023]. Each prediction head comprises fully connected layers that
-process the unified representation to predict a single scalar value for each parameter. By using these prediction heads, the
-model can estimate the SynBa parameters accurately. The SynBa parameters are then used to generate the complete dose-response matrix for the drug combination on the cell line. The model is trained end-to-end using the SynBa likelihood function
-as the loss function, which enables the model to learn the optimal parameters for predicting the dose-response matrix.
+## Run my experiments
 
----
-## Installation
-To install the required packages, run the following command:
-```bash
-pip install -r requirements.txt
+Use Python 3.11. The example installs CPU PyTorch; the reproduction guide also
+contains the CUDA setup used for the recorded experiments.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-analysis.txt
+.\.venv\Scripts\python.exe -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+.\.venv\Scripts\python.exe setup_reference.py
+.\.venv\Scripts\python.exe prepare_small_data.py
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe train_small.py --device cpu --output runs/reproduction_repeat
 ```
 
----
-## Data
-The pre-processed NCI-ALMANAC dataset, drug and cell line features, and the train-test split are available in `data.zip` file. 
-To use the dataset for training and evaluation of the DeepSynBa model, 
-please unzip into the `data` directory.
-The dataset consists of nearly 300,000 drug pair–cell line combinations, where each combination is associated with a dose-response matrix. 
-The dataset is split into training, validation, and test sets, with 60%, 20%, and 20% of the data in each set, respectively.
+`setup_reference.py` fetches the pinned original model/configuration and processed
+data, verifies every required file's SHA-256, and applies the batch-dimension
+correction needed for single-example evaluation. These reference files are local
+ignored dependencies, separate from the research files published here. Matching
+existing files are preserved; differing files are rejected to protect local work.
+The script also supports `--source-zip` for an offline copy of the pinned source.
 
----
-## Training
-To train the DeepSynBa model, run the following command:
-```bash
-python train.py --config_path <path_to_config>
+To repeat the ten-configuration experiment in a new output directory:
+
+```powershell
+.\.venv\Scripts\python.exe compare_variants.py --output runs/comparison_repeat
+.\.venv\Scripts\python.exe analyze_comparison.py --experiment runs/comparison_repeat
 ```
-The `--config_path` argument specifies config file of the model, which provides all required parameters for the training, 
-The training script will train the DeepSynBa model on the NCI-ALMANAC dataset 
-and save the model checkpoints and logs in the specified output directory in the config file.
 
----
-## Evaluation
-To evaluate the DeepSynBa model, run the following command:
-```bash
-python evaluate.py --checkpoint_path <path_to_model>
-```
-The `--checkpoint_path` argument specifies the path to the trained DeepSynBa model
+Follow-up studies use earlier run artifacts as described in their guides.
+Recorded source hashes may differ after documentation and repository updates;
+a new experiment should freeze its own code, data, protocol, and checkpoints.
 
----
-## Results
-The DeepSynBa model outperforms the state-of-the-art methods in the dose-response matrix prediction task across multiple evaluation scenarios, 
-including testing on novel drug combinations, cell lines, and drugs, across nine different tissue types. 
-The model yields reliable synergy score predictions and can predict drug combination responses across different dosages for untested combinations. 
-The intermediate dose-response parameter layer allows for separating efficacy from potency, 
-which informs the selection of dosage ranges that optimise efficacy while limiting off-target toxicity in experimental screens. 
-The predictive capability and the downstream actionability make DeepSynBa a powerful tool for 
-advancing drug combination research beyond the limitations of the current approaches. 
-Table 1 shows the performance comparison of DeepSynBa with the state-of-the-art methods on the NCI-ALMANAC dataset. 
-The results demonstrate that DeepSynBa outperforms the existing methods in predicting the dose-response matrix and synergy scores across multiple evaluation scenarios. 
-The model achieves superior performance in terms of the root mean squared error (RMSE), Pearson and Spearman correlation coefficients 
-for the dose-response matrix prediction task and the synergy score prediction task. 
-The results indicate that DeepSynBa can accurately predict the effects of drug combinations on cell lines and provide actionable insights for drug combination research.
+## Original work and attribution
 
-#### Table 1: Performance comparison of DeepSynBa with the state-of-the-art methods on the NCI-ALMANAC dataset
-
-
-<table>
-<tr><th>New Drug Combination</th><th>New Cell Line</th><th>New Drug</th></tr>
-<tr><td>
-
-|               | **RMSE** | **Pearson**   | **Spearman** |
-|---------------|----------|---------------|--------------|
-| **comboFM**   | 12.76    | 0.87          | 0.68         |
-| **comboLTR**  | 16.11    | 0.78          | 0.64         |
-| **DeepSynBa** | **7.72** | **0.95**      | **0.82**     |
-
-</td>
-<td>
-
-|               | **RMSE**  | **Pearson** | **Spearman** |
-|---------------|-----------|-------------|--------------|
-| **comboFM**   | 12.86     | 0.87        | 0.69         |
-| **comboLTR**  | 15.23     | 0.81        | 0.67         |
-| **DeepSynBa** | **7.71**  | **0.95**    | **0.82**     |
-
-</td>
-<td>
-
-|               | **RMSE**  | **Pearson** | **Spearman** |
-|---------------|-----------|-------------|--------------|
-| **comboFM**   | 42.39     | 0.35        | 0.24         |
-| **comboLTR**  | 40.22     | 0.40        | 0.40         |
-| **DeepSynBa** | **18.69** | **0.71**    | **0.64**     |
-</td>
-</tr> 
-</table>
-
-## References
-- **[Ross et al., 2022]** Ross, Jerret, et al. "Large-scale chemical language representations capture molecular structure and properties." Nature Machine Intelligence 4.12 (2022): 1256-1264.
-- **[Zhang et al., 2023]** Zhang, Haoting, et al. "SynBa: improved estimation of drug combination synergies with uncertainty quantification." Bioinformatics 39.Supplement_1 (2023): i121-i130.
-
-## License
-
-- **[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**
+DeepSynBa was introduced by Arslan, Aktukmak, Ferreira, Liò, Gao, and Taştan in
+*Bioinformatics* (2026), [doi:10.1093/bioinformatics/btag416](https://doi.org/10.1093/bioinformatics/btag416).
+Credit for the original model and processed dataset belongs to those authors.
+See [ATTRIBUTION.md](ATTRIBUTION.md) for the pinned source, licensing reference,
+and the boundary between the reference implementation and my research additions.
