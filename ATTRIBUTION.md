@@ -9,7 +9,7 @@ the original authors and are fetched separately for local experiments.
 
 - Authors' implementation: [hikuru/DeepSynBa](https://github.com/hikuru/DeepSynBa).
 - Pinned reference commit: `43c16961da835c8545842d564a8efdfec58bdd2f`.
-- Paper: Arslan, Aktukmak, Ferreira, Liò, Gao, and Taştan, *DeepSynBa*,
+- Paper: Kuru, Zhang, Rattray, Ek, Cicek, Taştan, and Milo, *DeepSynBa*,
   *Bioinformatics* (2026), [doi:10.1093/bioinformatics/btag416](https://doi.org/10.1093/bioinformatics/btag416).
 - The original repository states
   [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)

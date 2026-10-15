@@ -6,7 +6,8 @@ This repository contains my experimental code, protocols, result tables, figures
 and report. The original DeepSynBa model is an external reference dependency from
 [the authors' repository](https://github.com/hikuru/DeepSynBa).
 
-[Two-page research report](reports/DeepSynBa_Two_Page_Report.pdf) ·
+[Two-page research report PDF](reports/DeepSynBa_Two_Page_Report.pdf) ·
+[Word version](reports/DeepSynBa_Two_Page_Report.docx) ·
 [Results and evidence](results/README.md) ·
 [Completed research stages](PROGRESS.md)
 
@@ -105,7 +106,7 @@ a new experiment should freeze its own code, data, protocol, and checkpoints.
 
 ## Original work and attribution
 
-DeepSynBa was introduced by Arslan, Aktukmak, Ferreira, Liò, Gao, and Taştan in
+DeepSynBa was introduced by Kuru, Zhang, Rattray, Ek, Cicek, Taştan, and Milo in
 *Bioinformatics* (2026), [doi:10.1093/bioinformatics/btag416](https://doi.org/10.1093/bioinformatics/btag416).
 Credit for the original model and processed dataset belongs to those authors.
 See [ATTRIBUTION.md](ATTRIBUTION.md) for the pinned source, licensing reference,
